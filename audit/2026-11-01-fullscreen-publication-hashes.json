@@ -1,0 +1,42 @@
+{
+  "at": "2026-11-01T18:22:10.453Z",
+  "baseline": "0e206a016ad1dc07e169a95eca7b44da1c422415",
+  "runtime": "9344c61c6475cef32ae7",
+  "records": [
+    {
+      "file": "audit/2026-11-01-fullscreen-release.md",
+      "bytes": 3829,
+      "sha256": "1ba4429be8c3a0e092c60b29a6e1f3ec2f4be5ab78440fb13ef2fe5ca7c82386"
+    },
+    {
+      "file": "audit/2026-11-01-fullscreen-client-update.json",
+      "bytes": 518,
+      "sha256": "772093bf0f84607ac4b6f6abf89d758a3743a8154e79f151e716b3a2ce660228"
+    },
+    {
+      "file": "audit/2026-11-01-fullscreen-deployment.json",
+      "bytes": 21718,
+      "sha256": "54b700cd87d67859a9c9c6995ba005995dfd91bad79b65d5581453b70de88cb1"
+    },
+    {
+      "file": "audit/2026-11-01-fullscreen-live.json",
+      "bytes": 60320,
+      "sha256": "eb1bef026bce1ca601a028341c404360c6ccda91528f246558359e34b45eeff0"
+    },
+    {
+      "file": "audit/2026-11-01-fullscreen-live.png",
+      "bytes": 2911,
+      "sha256": "359f38b399f165b2e439e32a0ca1e4208c651066d0c5b2b119a36c77a9503439"
+    },
+    {
+      "file": "audit/2026-11-01-fullscreen-release-gate.json",
+      "bytes": 1415,
+      "sha256": "2760e690b22d3dee58031c56999da2630dbf4923a63d0953e5ddd87bbaf8b0c4"
+    },
+    {
+      "file": "audit/2026-11-01-fullscreen-publication.patch",
+      "bytes": 93180,
+      "sha256": "a46b913e02163522c4c3b9b5e0fad4c43e00ccedfc926509a5d9945abd4989d6"
+    }
+  ]
+}

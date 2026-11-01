@@ -1,0 +1,19 @@
+{
+  "at": "2026-11-01T18:21:35.066Z",
+  "before": {
+    "best": "5,300",
+    "checkpoint": "Prism Garden · 0 points",
+    "release": "f6395c37345e39f49387"
+  },
+  "after": {
+    "best": "5,300",
+    "checkpoint": "Prism Garden · 0 points",
+    "offline": "Ready to play offline",
+    "release": "9344c61c6475cef32ae7"
+  },
+  "settingsTap": {
+    "fullscreenLabel": "Exit fullscreen",
+    "settingsOpen": true
+  },
+  "limit": "Local Chromium at a 390x844 CSS viewport; not a physical Android installed-window test."
+}
