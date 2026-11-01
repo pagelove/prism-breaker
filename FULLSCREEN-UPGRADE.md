@@ -1,5 +1,15 @@
 # Phone fullscreen
 
+## Button gestures — October 31, 2026
+
+On phones and in installed app windows, ordinary button actions also request API fullscreen, including navigation, settings, leaderboard and dynamically created world controls. The delegated handler runs after the button's action in the same trusted click task. It does not cancel, delay or replay that action. Keyboard activation of a button qualifies; synthetic clicks and ordinary desktop browser tabs do not.
+
+An installed `display-mode: fullscreen` window can still request API fullscreen from a button gesture. The manifest mode alone does not establish that the operating system hides every system area. Browser refusal remains possible; automatic failures are silent and a later button gesture can retry. This is a gesture-based fallback, not a promise of fullscreen before the first interaction.
+
+Native share, copy, scorecard download and installation buttons declare `data-fullscreen-skip` to reserve their gesture for those APIs. Fullscreen and layout controls handle themselves. A button-entered fullscreen session stays open when returning to the start screen. Explicit or system fullscreen exit suppresses incidental button-driven re-entry until a new play action or explicit fullscreen request; this supersedes the older return-home behavior below for button-entered sessions.
+
+Behavioral coverage includes home navigation, installed fullscreen and standalone windows, desktop exclusion, dynamic controls, synthetic/canceled/disabled clicks, reserved gestures, explicit/system exits, rejection retries and unavailable APIs. Real phone/installed-OS behavior still requires device validation.
+
 Installed apps now prefer fullscreen through the manifest. The browser uses its supported fallback when this display mode is unavailable. The operating system may retain status or gesture areas, especially on iPhone; JavaScript cannot force those away.
 
 On phones, Start adventure, Daily Challenge, Continue adventure, Play again and Practice request fullscreen synchronously from the player's tap. Desktop starts retain their normal page layout. The request targets the document root so settings, leaderboards, result forms and sharing dialogs remain in the fullscreen tree.
