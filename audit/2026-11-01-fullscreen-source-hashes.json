@@ -1,0 +1,92 @@
+{
+  "at": "2026-11-01T18:17:16.340Z",
+  "baseline": "99b0bddb6c5022d269357714206314acdc362eee",
+  "runtime": "9344c61c6475cef32ae7",
+  "records": [
+    {
+      "file": "FULLSCREEN-UPGRADE.md",
+      "bytes": 11095,
+      "sha256": "0420fe3f6e214c82c41c33147b9b41e258d615a6bc2094f002c023b90c158595"
+    },
+    {
+      "file": "public/display.js",
+      "bytes": 4935,
+      "sha256": "649adc7cadc448a10c3964a62cf0531f7bc7c4d91f98e40bd8103efc5a35768a"
+    },
+    {
+      "file": "public/index.html",
+      "bytes": 33246,
+      "sha256": "debeecab54d63dd629ae82867e49a326ccabea70d9f60f31367019604b6d7279"
+    },
+    {
+      "file": "public/pwa-release.js",
+      "bytes": 88,
+      "sha256": "ffeadd53781b5a5683259db148b795b756fd50169c6ef286b489e0115783b572"
+    },
+    {
+      "file": "public/sw.js",
+      "bytes": 33488,
+      "sha256": "7e4fe35e4adeabbc9c2ffacada3f1af47e86b5c8c9609e0f266e2611046e6df7"
+    },
+    {
+      "file": "review/evidence/handbook-browser.json",
+      "bytes": 330204,
+      "sha256": "db929fc3b99ad9b10402c5e675609980f5c5baecfe6468f2ded831aed8739c7e"
+    },
+    {
+      "file": "tests/display.test.mjs",
+      "bytes": 6372,
+      "sha256": "9e384cab89411ada4cb36585fe0e771aca509264e2a69a51a22a77faebe618b5"
+    },
+    {
+      "file": "audit/2026-10-30-fullscreen-launch-live.json",
+      "bytes": 404,
+      "sha256": "a1af0593954f7254b06973dc915d5a9237ebedd65c6ada1deef22b451f1e56a6"
+    },
+    {
+      "file": "audit/2026-10-30-fullscreen-launch-review.md",
+      "bytes": 2365,
+      "sha256": "1210c98d68cdaaa1847a6e4cc88279acfaae58cd193eac326c33edc6ab00933c"
+    },
+    {
+      "file": "audit/2026-10-30-fullscreen-launch-verified.json",
+      "bytes": 527,
+      "sha256": "95aa56c9909aacca6654b3a67a752547228d0c668591285b8586975776cd0a4d"
+    },
+    {
+      "file": "audit/2026-10-31-fullscreen-buttons-hashes.json",
+      "bytes": 1072,
+      "sha256": "ad57cd2702e0a05dca2ea7fcc4124459e3d8aa3e9d500cf2219f1164ac200630"
+    },
+    {
+      "file": "audit/2026-10-31-fullscreen-buttons.md",
+      "bytes": 3219,
+      "sha256": "b1cb88c21eba60af0e73030398cd5e9fe4fad240e35dd0759818dd820250edaa"
+    },
+    {
+      "file": "audit/2026-10-31-fullscreen-buttons.patch",
+      "bytes": 67170,
+      "sha256": "f02b63e6623d5e14411f21f25ae3562359fa865420a5703a3b1a29cafb8897c4"
+    },
+    {
+      "file": "audit/2026-10-31-fullscreen-buttons.png",
+      "bytes": 108636,
+      "sha256": "99c269771e441c61b7b414113d075c8bd85f659977b24b6417afb51176a799e5"
+    },
+    {
+      "file": "audit/2026-11-01-fullscreen-browser.json",
+      "bytes": 330204,
+      "sha256": "db929fc3b99ad9b10402c5e675609980f5c5baecfe6468f2ded831aed8739c7e"
+    },
+    {
+      "file": "audit/2026-11-01-fullscreen-release.md",
+      "bytes": 2053,
+      "sha256": "5c1ff0ac295d9f3eac14c5f3de048d4f8fec405e1b8ae7441dae44e1a2cbb5f7"
+    },
+    {
+      "file": "audit/2026-11-01-fullscreen-source.patch",
+      "bytes": 562271,
+      "sha256": "2b1e12b8df4b9e3987b685d54b7c24884f7e7ccc75d7b1e8247d79e93e96dd28"
+    }
+  ]
+}
