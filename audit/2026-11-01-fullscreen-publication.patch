@@ -1,0 +1,2503 @@
+diff --git a/audit/2026-11-01-fullscreen-client-update.json b/audit/2026-11-01-fullscreen-client-update.json
+new file mode 100644
+index 0000000..5eae72d
+--- /dev/null
++++ b/audit/2026-11-01-fullscreen-client-update.json
+@@ -0,0 +1,19 @@
++{
++  "at": "2026-11-01T18:21:35.066Z",
++  "before": {
++    "best": "5,300",
++    "checkpoint": "Prism Garden · 0 points",
++    "release": "f6395c37345e39f49387"
++  },
++  "after": {
++    "best": "5,300",
++    "checkpoint": "Prism Garden · 0 points",
++    "offline": "Ready to play offline",
++    "release": "9344c61c6475cef32ae7"
++  },
++  "settingsTap": {
++    "fullscreenLabel": "Exit fullscreen",
++    "settingsOpen": true
++  },
++  "limit": "Local Chromium at a 390x844 CSS viewport; not a physical Android installed-window test."
++}
+\ No newline at end of file
+diff --git a/audit/2026-11-01-fullscreen-deployment.json b/audit/2026-11-01-fullscreen-deployment.json
+new file mode 100644
+index 0000000..490eacc
+--- /dev/null
++++ b/audit/2026-11-01-fullscreen-deployment.json
+@@ -0,0 +1,645 @@
++{
++  "origin": "https://sane-guild-8399.onpagelove.com",
++  "authoringHost": "https://dav-sane-guild-8399.onpagelove.com",
++  "deployedAt": "2026-11-01T18:20:26.879Z",
++  "approval": {
++    "commit": "0e206a016ad1dc07e169a95eca7b44da1c422415",
++    "sourceDigest": "077d86509ae065b21d8b85e9deba8d47f7b88517c761e9ca812669f236a6aa82",
++    "release": "9344c61c6475cef32ae7",
++    "completedAt": "2026-11-01T18:19:35.279Z"
++  },
++  "version": "9344c61c6475cef32ae7",
++  "pwa": {
++    "version": "9344c61c6475cef32ae7",
++    "assets": 94,
++    "bytes": 2567883,
++    "checked": true
++  },
++  "publication": "immutable dependencies before conditional entry promotion",
++  "preserved": [
++    "scores",
++    "world definitions",
++    "legacy root scripts/styles",
++    "older release directories"
++  ],
++  "files": [
++    {
++      "path": "/releases/9344c61c6475cef32ae7/app.js",
++      "status": 201,
++      "sha256": "290e4daa8174ac2ae4257e0d42e0bfe407d3b80e6680d92cbf21ab2168f166b2",
++      "bytes": 66491
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/apple-touch-icon.png",
++      "status": 201,
++      "sha256": "6f3099dc0feaba5a3d3fc5f7bf5fdfdfcb84b68ab0eb8f18fc49cbd727482092",
++      "bytes": 3811
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/assets/FONT-LICENSE.txt",
++      "status": 201,
++      "sha256": "18a4de52385f6b988782639d5d0cc1326e5a8c2de9a7f01d7b20d9aedcc60943",
++      "bytes": 4401
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/assets/ICON-LICENSE.txt",
++      "status": 201,
++      "sha256": "b740a1d46122672da62833e97f7e7c8a13fa85cbc7445b584b297cc00dde93db",
++      "bytes": 1073
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/assets/QR-LICENSE.txt",
++      "status": 201,
++      "sha256": "51e9a131e168e6c90797df6eb1f3711f00e7a9c0b8257e3cd77a105677325827",
++      "bytes": 1094
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/assets/display.woff2",
++      "status": 201,
++      "sha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d",
++      "bytes": 22288
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/assets/favicon-32.png",
++      "status": 201,
++      "sha256": "680e6bdf735e9728f70231abbbec5160deabb8b6d484fdf23f7b15cd2812e783",
++      "bytes": 791
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/assets/icons.svg",
++      "status": 201,
++      "sha256": "51cfeef01c610a3f7ed5cb8d5e8b5763ea022b33bff924986a9efad2b5f84088",
++      "bytes": 10681
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/assets/og-prism-breaker-square.jpg",
++      "status": 201,
++      "sha256": "bed585ab10f991afe8f6206ead168a05231095be281838105d886b78f7fab7b3",
++      "bytes": 420420
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/assets/og-prism-breaker.jpg",
++      "status": 201,
++      "sha256": "5a8a0efa807a3c798f316814356cc41259f76b1ff6dc2bb62c9c3dee1b907fcb",
++      "bytes": 222971
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/assets/prism-icon-192.png",
++      "status": 201,
++      "sha256": "59f06d7f54fbd35394375f9167c8c5297d0efcf3c3de3f691966ec69c2245a02",
++      "bytes": 4055
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/assets/prism-icon-512.png",
++      "status": 201,
++      "sha256": "02fc69e93d50d59d9bedc057c450e3c76d9f87be53fa6b18ae47026df0fb1b19",
++      "bytes": 27390
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/assets/prism-maskable-512.png",
++      "status": 201,
++      "sha256": "fdd83a754dd4d2592b3a9bd62de3d85f035f313229ba2d4f12d1ae719a3964e8",
++      "bytes": 13028
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/assets/prism-maskable.svg",
++      "status": 201,
++      "sha256": "d88d9e4fbc2a7baf7e28d1d004b7d2d0b3df0614b5c1f9d89916d43d2995f3a9",
++      "bytes": 500
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/assets/prism-wordmark.svg",
++      "status": 201,
++      "sha256": "974dbdd2db0e60a2c91a96e65b4172629fe326dd616d2418340381c8458be6b3",
++      "bytes": 1375
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/assets/world-preview-01.png",
++      "status": 201,
++      "sha256": "723714a7ab22d82a808730a8a19c41973949b984837784ebc955c87722dbd84e",
++      "bytes": 27953
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/assets/world-preview-02.png",
++      "status": 201,
++      "sha256": "a177c415539a26ba72eab802a88f1391575b6e79cf0c7b59e2f0d263b376302c",
++      "bytes": 29205
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/assets/world-preview-03.png",
++      "status": 201,
++      "sha256": "495e4ed278099f360ae44998dd4448e7ac490f66c3bd6994c395c7548de7ef40",
++      "bytes": 31118
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/assets/world-preview-04.png",
++      "status": 201,
++      "sha256": "2877d831886976f9a979a53454f8c9aee3ba8197c6c27e14dcf3e40673e65bd5",
++      "bytes": 29656
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/assets/world-preview-05.png",
++      "status": 201,
++      "sha256": "e9dd0e0fd6f0653ac2946c8f0b0214fb1a97f869eba53ce430ff8acb7e85919f",
++      "bytes": 29165
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/assets/world-preview-06.png",
++      "status": 201,
++      "sha256": "d6d02288d04df5fca12ca0ba5e9166464a4a05e5fce29398bb264a545f412abf",
++      "bytes": 25415
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/assets/world-preview-07.png",
++      "status": 201,
++      "sha256": "d25a4883493731dd6016c7f1520f9b50b70f66510740ab9c69ee3e810404e79f",
++      "bytes": 27961
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/assets/world-preview-08.png",
++      "status": 201,
++      "sha256": "b0e453e7b82ce715bb3bd2f9e7c90d0cc43ed6ac42b0025a8ef4a930ab5ed631",
++      "bytes": 27056
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/assets/world-preview-09.png",
++      "status": 201,
++      "sha256": "78947042e99d833e15e42247b6b831a4e5311b52dde63a0104ac605e7fe56376",
++      "bytes": 27537
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/assets/world-preview-10.png",
++      "status": 201,
++      "sha256": "cd58c03984e72c027bd1fc4c3c36ba61cec0c4cb636cf1393d6804617ef77185",
++      "bytes": 27226
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/assets/world-preview-11.png",
++      "status": 201,
++      "sha256": "bbb6e77f793019a4f7e5f698707c8361beaf8888bb029c57ad2c6eb28486e31b",
++      "bytes": 30170
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/assets/world-preview-12.png",
++      "status": 201,
++      "sha256": "815994fd037b1a61391281711d07f0a4c8ddba553f22cc78da346ac5a34ddbe7",
++      "bytes": 29931
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/assets/world-preview-13.png",
++      "status": 201,
++      "sha256": "7e9fc9f26a68135029572b03d042fb320b09947148214862d05069dd62256289",
++      "bytes": 27592
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/assets/world-preview-14.png",
++      "status": 201,
++      "sha256": "fbeb3a2a13a67823e4da1ac795f6fe5e8974817ae4c589b3964511c54f23f33d",
++      "bytes": 22221
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/assets/world-preview-15.png",
++      "status": 201,
++      "sha256": "0ce471a1f499454e5a682f4416bc0a2400b7d44dfd1c1dbfdb3d2601a13285cb",
++      "bytes": 26493
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/assets/world-preview-16.png",
++      "status": 201,
++      "sha256": "a0a5b3433e17e31e8b51b158f9a70899a40c1fb98110f12daf8f92f4c1d06539",
++      "bytes": 32667
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/audio.js",
++      "status": 201,
++      "sha256": "b13c8690fe232d99c64173e280030c1eaa092ccc43d19b05e2c8e6b235811d51",
++      "bytes": 8328
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/bootstrap.js",
++      "status": 201,
++      "sha256": "222c6223e6c6c3a54397b17ea46b647ea2af55e5104e4a25e7195be7ea6a8d0e",
++      "bytes": 1363
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/brick-batch.js",
++      "status": 201,
++      "sha256": "644f4fb555f6805e5239db67f5479b4a76f7ed94d0fa2b1f0b49068dc1318115",
++      "bytes": 10222
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/brick-events.js",
++      "status": 201,
++      "sha256": "48578bc9a381d7dd6191fee3a413e78ec5c1310337b29273da6db62abf53e3ee",
++      "bytes": 3932
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/brick-labels.js",
++      "status": 201,
++      "sha256": "aea68f79fd1389fabd472d7a6ff63d42fb8fccea2dd94cf9fa683ae212bd6716",
++      "bytes": 2654
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/bundled-worlds.js",
++      "status": 201,
++      "sha256": "3639105c83f147bab4577201ebd99aeb42beed307c06597fa1772c77ecf25bc0",
++      "bytes": 127892
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/champion.js",
++      "status": 201,
++      "sha256": "9e5c111b8b6dd435f85ad878744ae25e6f2edae01b8de5008dc9820670fe967d",
++      "bytes": 5979
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/cinematic-score.js",
++      "status": 201,
++      "sha256": "83a63d80c8c483d76f1f3e7916502ede59a437a69ebedd8c16c24dada03e760b",
++      "bytes": 1984
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/cinematics.js",
++      "status": 201,
++      "sha256": "c0e45ddc38c3858452d01f3b772b077b8ee58e7bc577a2cf9c85bcadd3f9458c",
++      "bytes": 15958
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/crystal-bricks.js",
++      "status": 201,
++      "sha256": "26eb949a7bbec2d217683b64a269ba77e87b0195cd355501bf840523368140f2",
++      "bytes": 6307
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/daily-ending.js",
++      "status": 201,
++      "sha256": "793eef0571f681c2450902d8e3e8338d4a97cc32e63bb6eb7bc392032ffd64b7",
++      "bytes": 6526
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/daily-score.js",
++      "status": 201,
++      "sha256": "c1265a32cfe622a49b89b6ba84517a89a8b1da15fa3665e9cc5bd0f525d10912",
++      "bytes": 489
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/display.css",
++      "status": 201,
++      "sha256": "3ad128e779c5e3787c5f5187572795ba726ae9422b1b89feb2de35e23ed188e7",
++      "bytes": 4199
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/display.js",
++      "status": 201,
++      "sha256": "649adc7cadc448a10c3964a62cf0531f7bc7c4d91f98e40bd8103efc5a35768a",
++      "bytes": 4935
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/editor-drafts.js",
++      "status": 201,
++      "sha256": "aea7ed001d164f2e3fdd1df6831097f481544878f9a6f1036245ac5245a3bd8b",
++      "bytes": 1023
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/editor-template.html",
++      "status": 201,
++      "sha256": "1ede6c7c0c183af5b7d95adc8954516640c36b883843e708726af9f537b2f0f4",
++      "bytes": 11093
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/editor.css",
++      "status": 201,
++      "sha256": "e82189843ab2b707f05db015df999abe1dbcad1e341b96b0b2b8bed618bbfb15",
++      "bytes": 15376
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/editor.js",
++      "status": 201,
++      "sha256": "50e352e36ecf93582911419fe14eca05a859463d661cd90b74e8af35fca9368a",
++      "bytes": 41010
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/engagement-art.js",
++      "status": 201,
++      "sha256": "bdeb0fe0b29310204367d4a821868665aab5a240491906d26844577ccff40677",
++      "bytes": 3268
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/engagement-data.js",
++      "status": 201,
++      "sha256": "905305da83279af4ac25a2770d2e305a29ed6e21a839d2ce5e1a3dfdebfce50d",
++      "bytes": 5547
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/engagement-ui.js",
++      "status": 201,
++      "sha256": "1f011e2e1e01e0839af9a2e658a3a3a19c494ad8c3877091d7108509f3750edf",
++      "bytes": 13489
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/engagement.css",
++      "status": 201,
++      "sha256": "a61525110dad9fd2b5ce5e525c4a08a468a0ec3de0fdcba6d561a955503849a6",
++      "bytes": 17386
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/engagement.js",
++      "status": 201,
++      "sha256": "490c8ef601830b8acf396c81e81750c692132c3f16a1a62a050a779ec778e49d",
++      "bytes": 5959
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/engine.js",
++      "status": 201,
++      "sha256": "65b8de38f5aa7c8525f8386229c136066eb3eab5cd7e38248325de98898863ae",
++      "bytes": 19273
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/favicon.ico",
++      "status": 201,
++      "sha256": "d1b9e08caed906f8f32c9e6de2fbd03e2fc2e3829bdb94778514051fce867728",
++      "bytes": 2456
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/favicon.svg",
++      "status": 201,
++      "sha256": "9a4aece1f75634e9147a1e5c931c25a93a85aa6e92633146764ee2259986ce9d",
++      "bytes": 442
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/frame-loop.js",
++      "status": 201,
++      "sha256": "d213d49c5f44df52f60970421494950cef3cee5a08c9b565e7aaef4ba6eeddb0",
++      "bytes": 627
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/graphics-recovery.js",
++      "status": 201,
++      "sha256": "9982401bd6ecdec700c393b5ae9f8f4c27bd47bdfeb0ed8d6701d78cc61491c8",
++      "bytes": 910
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/index.html",
++      "status": 201,
++      "sha256": "15319b5131fb292c7f6b5a1fddf4e6788d08372cb53ebb89d20e958067289643",
++      "bytes": 34638
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/keyboard-input.js",
++      "status": 201,
++      "sha256": "72b477647855c20b046a8f4416c8cd6a47568bca3971bae4bca6c2e9066b6a2b",
++      "bytes": 357
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/leaderboard.js",
++      "status": 201,
++      "sha256": "7ab41b727c3a51868da5f8e25b32aaddc307b055185290c8351100be5c045c97",
++      "bytes": 1490
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/levels.js",
++      "status": 201,
++      "sha256": "3e77280d1e67623623244a3d9a337d6e9b0e3510e64a642dd6d577529e388fe6",
++      "bytes": 1660
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/manifest.webmanifest",
++      "status": 201,
++      "sha256": "f862c18fbf110e62b45bb04aa00ec3c77fab7ba55e03452f6e311f666205197e",
++      "bytes": 1301
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/mastery-ceremony.js",
++      "status": 201,
++      "sha256": "9f7aeb0c59f2846f2299c5c94a9bb82b40d823d346785e179902d9134aa5e4b3",
++      "bytes": 4218
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/mastery.js",
++      "status": 201,
++      "sha256": "9f25c93ec54c6276278b69fd7a8eae74be425070655fc3ece357c71d53dd50a5",
++      "bytes": 4880
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/medal-ui.js",
++      "status": 201,
++      "sha256": "6839709f5756cddc1e0f12d74ba2e673b2d5df9326f0e982aa841324ff76cbb2",
++      "bytes": 679
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/music.js",
++      "status": 201,
++      "sha256": "fe6391fa3dac908403eabbd8e8526e54c60f2fbbe067b96aaaef286ca3199e4e",
++      "bytes": 6483
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/offline.js",
++      "status": 201,
++      "sha256": "0c2fee334c9a8cf398f8d527132b196da46a9d54ce4bca69a06ba625cd7fc5be",
++      "bytes": 11425
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/paddle-art.js",
++      "status": 201,
++      "sha256": "1600e4740f30cac2d140c28679be2a794e8022608dd22394e8450c2eb2d5da97",
++      "bytes": 4790
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/particle-batch.js",
++      "status": 201,
++      "sha256": "52ce4da7c6a60bb690a82d93ca738b9004e2ebe94d12ffe636cc72dc134c4678",
++      "bytes": 3000
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/pointer-input.js",
++      "status": 201,
++      "sha256": "330809db368402dbcd2b19d8fa57d99cf9fa69a4a36e422f891b04c2f5f28480",
++      "bytes": 1420
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/postprocessing.js",
++      "status": 201,
++      "sha256": "6bf13187afddb24a0981e83cab06b8a36d6ecaeab48da2e487457502314fa04a",
++      "bytes": 19341
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/preferences.js",
++      "status": 201,
++      "sha256": "9823421e9d0ebc865bd04ea077d12ac5294d1d85ee2a2ce79e3f4c8beca12fb2",
++      "bytes": 1077
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/publish-world.js",
++      "status": 201,
++      "sha256": "53c895ec6280913e98816fc771c9849ae326333603744f6642b691b05260072b",
++      "bytes": 2314
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/pwa.js",
++      "status": 201,
++      "sha256": "c4085582173d9166353d931b3443af4061c2db90e27e6ca1941386b8fb4452fd",
++      "bytes": 9057
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/render-budget.js",
++      "status": 201,
++      "sha256": "7368f9429d54c3ab90dc3db1639bf14df9bab034b4c7ed6d8d26a4d94859bcf2",
++      "bytes": 1698
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/save-recovery.js",
++      "status": 201,
++      "sha256": "387ae17446f6168fa65245309d8160407b16ece50ca4efc7d95365bae2d53f4b",
++      "bytes": 3009
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/scene-playback.js",
++      "status": 201,
++      "sha256": "f75ef18f04547d6d1c9104e6496679fb7be22d136d9729a3f4e5db4f49fef773",
++      "bytes": 667
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/scene.js",
++      "status": 201,
++      "sha256": "f37d44708584e59e8b1ca7f36d5808d1a88e22a1a983bdbabd8f8c20a76d1813",
++      "bytes": 26148
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/scenery-batch.js",
++      "status": 201,
++      "sha256": "5ad6495e4ea0e68b59f6e82e994b9819ade9d4ef12c8d6a5538c8decfab63aca",
++      "bytes": 2884
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/score-contract.js",
++      "status": 201,
++      "sha256": "e64a07eee78201e2c1a2d0df0942a0314a3f416801a7002b10ce364502d1c63f",
++      "bytes": 819
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/sharing.js",
++      "status": 201,
++      "sha256": "2b6bd0a4f840e23bf56a77356869ce7efe270e5b6b43f9927223f1cd7e154134",
++      "bytes": 12202
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/style.css",
++      "status": 201,
++      "sha256": "784a3f55f30d72c52af6741c0db4e817e24226187215d2f29b3cbf8caa0f50ee",
++      "bytes": 38833
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/vendor/THREE-LICENSE.txt",
++      "status": 201,
++      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
++      "bytes": 1081
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/vendor/qr.js",
++      "status": 201,
++      "sha256": "ea91d7118a5395289170da848b7c6758b996163bfbccf312591ab65a4911b7c0",
++      "bytes": 51907
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/vendor/three.core.min.js",
++      "status": 201,
++      "sha256": "61ba0df005b05991361d040d8ff670e1aadfd0ce7aeebd1fdb0725957a8957de",
++      "bytes": 381124
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/vendor/three.module.min.js",
++      "status": 201,
++      "sha256": "e2b5ee6bccd38fd6d8a2428546b83c5f2426d84b152ef82be8055556e3b40eb6",
++      "bytes": 338908
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/victory-music.js",
++      "status": 201,
++      "sha256": "8ab4f00f99b49e1774e41314914719c5f02a0d96e1754503ae63a55881b41b7e",
++      "bytes": 1486
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/world-data.css",
++      "status": 201,
++      "sha256": "3f36980557563c89e1a700d275bea9eca1cce1305f32b2e6dbc51d600d33fe9d",
++      "bytes": 889
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/world-format.js",
++      "status": 201,
++      "sha256": "977c3aa76d4821191acb3a30a04385e1bcf51191aeb24bac898fea17afaa4cb9",
++      "bytes": 2768
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/world-identity.js",
++      "status": 201,
++      "sha256": "abcb9f3099b738030db2b3f94e82a0067259fdac6a6deba06c0fb743963517c9",
++      "bytes": 953
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/world-schema.js",
++      "status": 201,
++      "sha256": "25cf56a883f29bb6c83eb917c3f8405da967c9fb68af4d9053618031808e0ca7",
++      "bytes": 12345
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/world-working-document.js",
++      "status": 201,
++      "sha256": "04b9fa06d6ddc8e227e309314af8ad6fbcc8538d9b3e8b8897ffe7c623825542",
++      "bytes": 2867
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/pwa-release.js",
++      "status": 201,
++      "sha256": "ffeadd53781b5a5683259db148b795b756fd50169c6ef286b489e0115783b572",
++      "bytes": 88
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/service-worker.js",
++      "status": 201,
++      "sha256": "7e4fe35e4adeabbc9c2ffacada3f1af47e86b5c8c9609e0f266e2611046e6df7",
++      "bytes": 33488
++    },
++    {
++      "path": "/releases/9344c61c6475cef32ae7/release.json",
++      "status": 201,
++      "sha256": "10bf14af23a4a3793172d29fa8a6c4e449c69b110368f36d14f0e1424f7e59b2",
++      "bytes": 24367
++    },
++    {
++      "path": "/manifest.webmanifest",
++      "status": 200,
++      "sha256": "f862c18fbf110e62b45bb04aa00ec3c77fab7ba55e03452f6e311f666205197e",
++      "bytes": 1301
++    },
++    {
++      "path": "/editor.html",
++      "status": 200,
++      "sha256": "7e5088fbbcf3d4fa589a122214b7202f993cff183e7882890da5d4e48637ff05",
++      "bytes": 12619
++    },
++    {
++      "path": "/editor/index.html",
++      "status": 200,
++      "sha256": "7e5088fbbcf3d4fa589a122214b7202f993cff183e7882890da5d4e48637ff05",
++      "bytes": 12619
++    },
++    {
++      "path": "/editor/:worldname",
++      "status": 200,
++      "sha256": "ddad339dbd3e2eaf0c897a297f2fff99b180593dbf2a04d9a2dea4de19b9c950",
++      "bytes": 2856
++    },
++    {
++      "path": "/index.html",
++      "status": 200,
++      "sha256": "15319b5131fb292c7f6b5a1fddf4e6788d08372cb53ebb89d20e958067289643",
++      "bytes": 34638
++    },
++    {
++      "path": "/sw.js",
++      "status": 200,
++      "sha256": "7e4fe35e4adeabbc9c2ffacada3f1af47e86b5c8c9609e0f266e2611046e6df7",
++      "bytes": 33488
++    }
++  ]
++}
+diff --git a/audit/2026-11-01-fullscreen-live.json b/audit/2026-11-01-fullscreen-live.json
+new file mode 100644
+index 0000000..13185b4
+--- /dev/null
++++ b/audit/2026-11-01-fullscreen-live.json
+@@ -0,0 +1,1694 @@
++{
++  "at": "2026-11-01T18:21:03.928Z",
++  "origin": "https://sane-guild-8399.onpagelove.com",
++  "version": "9344c61c6475cef32ae7",
++  "worker": {
++    "status": 200,
++    "sha256": "7e4fe35e4adeabbc9c2ffacada3f1af47e86b5c8c9609e0f266e2611046e6df7",
++    "headers": {
++      "content-type": "text/javascript",
++      "cache-control": "public, max-age=300",
++      "etag": "\"7e4fe35e4adeabbc9c2ffacada3f1af47e86b5c8c9609e0f266e2611046e6df7\"",
++      "service-worker-allowed": null,
++      "content-security-policy": null,
++      "x-content-type-options": null
++    }
++  },
++  "manifest": {
++    "id": "/",
++    "name": "Prism Breaker",
++    "short_name": "Prism Breaker",
++    "description": "Break through sixteen colorful 3D worlds. Play Adventure, Practice and the Daily Challenge online or offline.",
++    "lang": "en",
++    "start_url": "/?source=installed",
++    "scope": "/",
++    "display": "fullscreen",
++    "background_color": "#111d20",
++    "theme_color": "#111d20",
++    "categories": [
++      "games",
++      "entertainment"
++    ],
++    "icons": [
++      {
++        "src": "/releases/9344c61c6475cef32ae7/assets/prism-icon-192.png",
++        "sizes": "192x192",
++        "type": "image/png",
++        "purpose": "any"
++      },
++      {
++        "src": "/releases/9344c61c6475cef32ae7/assets/prism-icon-512.png",
++        "sizes": "512x512",
++        "type": "image/png",
++        "purpose": "any"
++      },
++      {
++        "src": "/releases/9344c61c6475cef32ae7/assets/prism-maskable-512.png",
++        "sizes": "512x512",
++        "type": "image/png",
++        "purpose": "maskable"
++      }
++    ],
++    "shortcuts": [
++      {
++        "name": "Daily Challenge leaderboard",
++        "short_name": "Daily Challenge",
++        "url": "/?leaderboard=daily",
++        "icons": [
++          {
++            "src": "/releases/9344c61c6475cef32ae7/assets/prism-icon-192.png",
++            "sizes": "192x192",
++            "type": "image/png"
++          }
++        ]
++      },
++      {
++        "name": "Adventure leaderboard",
++        "short_name": "Leaderboard",
++        "url": "/?leaderboard=campaign",
++        "icons": [
++          {
++            "src": "/releases/9344c61c6475cef32ae7/assets/prism-icon-192.png",
++            "sizes": "192x192",
++            "type": "image/png"
++          }
++        ]
++      }
++    ]
++  },
++  "home": {
++    "status": 200,
++    "headers": {
++      "content-type": "text/html",
++      "cache-control": null,
++      "etag": "\"15319b5131fb292c7f6b5a1fddf4e6788d08372cb53ebb89d20e958067289643\"",
++      "service-worker-allowed": null,
++      "content-security-policy": null,
++      "x-content-type-options": null
++    },
++    "manifestLinked": true,
++    "releaseMarker": true
++  },
++  "entryIssues": [],
++  "assets": [
++    {
++      "path": "/app.js",
++      "url": "/releases/9344c61c6475cef32ae7/app.js",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/javascript",
++        "cache-control": "public, max-age=300",
++        "etag": "\"290e4daa8174ac2ae4257e0d42e0bfe407d3b80e6680d92cbf21ab2168f166b2\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 66491,
++      "sha256": "290e4daa8174ac2ae4257e0d42e0bfe407d3b80e6680d92cbf21ab2168f166b2",
++      "valid": true
++    },
++    {
++      "path": "/apple-touch-icon.png",
++      "url": "/releases/9344c61c6475cef32ae7/apple-touch-icon.png",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "image/png",
++        "cache-control": "public, max-age=300",
++        "etag": "\"6f3099dc0feaba5a3d3fc5f7bf5fdfdfcb84b68ab0eb8f18fc49cbd727482092\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 3811,
++      "sha256": "6f3099dc0feaba5a3d3fc5f7bf5fdfdfcb84b68ab0eb8f18fc49cbd727482092",
++      "valid": true
++    },
++    {
++      "path": "/assets/display.woff2",
++      "url": "/releases/9344c61c6475cef32ae7/assets/display.woff2",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "font/woff2",
++        "cache-control": "public, max-age=300",
++        "etag": "\"0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 22288,
++      "sha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d",
++      "valid": true
++    },
++    {
++      "path": "/assets/favicon-32.png",
++      "url": "/releases/9344c61c6475cef32ae7/assets/favicon-32.png",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "image/png",
++        "cache-control": "public, max-age=300",
++        "etag": "\"680e6bdf735e9728f70231abbbec5160deabb8b6d484fdf23f7b15cd2812e783\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 791,
++      "sha256": "680e6bdf735e9728f70231abbbec5160deabb8b6d484fdf23f7b15cd2812e783",
++      "valid": true
++    },
++    {
++      "path": "/assets/FONT-LICENSE.txt",
++      "url": "/releases/9344c61c6475cef32ae7/assets/FONT-LICENSE.txt",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/plain",
++        "cache-control": null,
++        "etag": "\"18a4de52385f6b988782639d5d0cc1326e5a8c2de9a7f01d7b20d9aedcc60943\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 4401,
++      "sha256": "18a4de52385f6b988782639d5d0cc1326e5a8c2de9a7f01d7b20d9aedcc60943",
++      "valid": true
++    },
++    {
++      "path": "/assets/ICON-LICENSE.txt",
++      "url": "/releases/9344c61c6475cef32ae7/assets/ICON-LICENSE.txt",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/plain",
++        "cache-control": null,
++        "etag": "\"b740a1d46122672da62833e97f7e7c8a13fa85cbc7445b584b297cc00dde93db\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 1073,
++      "sha256": "b740a1d46122672da62833e97f7e7c8a13fa85cbc7445b584b297cc00dde93db",
++      "valid": true
++    },
++    {
++      "path": "/assets/icons.svg",
++      "url": "/releases/9344c61c6475cef32ae7/assets/icons.svg",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "image/svg+xml",
++        "cache-control": "public, max-age=300",
++        "etag": "\"51cfeef01c610a3f7ed5cb8d5e8b5763ea022b33bff924986a9efad2b5f84088\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 10681,
++      "sha256": "51cfeef01c610a3f7ed5cb8d5e8b5763ea022b33bff924986a9efad2b5f84088",
++      "valid": true
++    },
++    {
++      "path": "/assets/og-prism-breaker-square.jpg",
++      "url": "/releases/9344c61c6475cef32ae7/assets/og-prism-breaker-square.jpg",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "image/jpeg",
++        "cache-control": "public, max-age=300",
++        "etag": "\"bed585ab10f991afe8f6206ead168a05231095be281838105d886b78f7fab7b3\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 420420,
++      "sha256": "bed585ab10f991afe8f6206ead168a05231095be281838105d886b78f7fab7b3",
++      "valid": true
++    },
++    {
++      "path": "/assets/og-prism-breaker.jpg",
++      "url": "/releases/9344c61c6475cef32ae7/assets/og-prism-breaker.jpg",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "image/jpeg",
++        "cache-control": "public, max-age=300",
++        "etag": "\"5a8a0efa807a3c798f316814356cc41259f76b1ff6dc2bb62c9c3dee1b907fcb\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 222971,
++      "sha256": "5a8a0efa807a3c798f316814356cc41259f76b1ff6dc2bb62c9c3dee1b907fcb",
++      "valid": true
++    },
++    {
++      "path": "/assets/prism-icon-192.png",
++      "url": "/releases/9344c61c6475cef32ae7/assets/prism-icon-192.png",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "image/png",
++        "cache-control": "public, max-age=300",
++        "etag": "\"59f06d7f54fbd35394375f9167c8c5297d0efcf3c3de3f691966ec69c2245a02\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 4055,
++      "sha256": "59f06d7f54fbd35394375f9167c8c5297d0efcf3c3de3f691966ec69c2245a02",
++      "valid": true
++    },
++    {
++      "path": "/assets/prism-icon-512.png",
++      "url": "/releases/9344c61c6475cef32ae7/assets/prism-icon-512.png",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "image/png",
++        "cache-control": "public, max-age=300",
++        "etag": "\"02fc69e93d50d59d9bedc057c450e3c76d9f87be53fa6b18ae47026df0fb1b19\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 27390,
++      "sha256": "02fc69e93d50d59d9bedc057c450e3c76d9f87be53fa6b18ae47026df0fb1b19",
++      "valid": true
++    },
++    {
++      "path": "/assets/prism-maskable-512.png",
++      "url": "/releases/9344c61c6475cef32ae7/assets/prism-maskable-512.png",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "image/png",
++        "cache-control": "public, max-age=300",
++        "etag": "\"fdd83a754dd4d2592b3a9bd62de3d85f035f313229ba2d4f12d1ae719a3964e8\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 13028,
++      "sha256": "fdd83a754dd4d2592b3a9bd62de3d85f035f313229ba2d4f12d1ae719a3964e8",
++      "valid": true
++    },
++    {
++      "path": "/assets/prism-maskable.svg",
++      "url": "/releases/9344c61c6475cef32ae7/assets/prism-maskable.svg",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "image/svg+xml",
++        "cache-control": "public, max-age=300",
++        "etag": "\"d88d9e4fbc2a7baf7e28d1d004b7d2d0b3df0614b5c1f9d89916d43d2995f3a9\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 500,
++      "sha256": "d88d9e4fbc2a7baf7e28d1d004b7d2d0b3df0614b5c1f9d89916d43d2995f3a9",
++      "valid": true
++    },
++    {
++      "path": "/assets/prism-wordmark.svg",
++      "url": "/releases/9344c61c6475cef32ae7/assets/prism-wordmark.svg",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "image/svg+xml",
++        "cache-control": "public, max-age=300",
++        "etag": "\"974dbdd2db0e60a2c91a96e65b4172629fe326dd616d2418340381c8458be6b3\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 1375,
++      "sha256": "974dbdd2db0e60a2c91a96e65b4172629fe326dd616d2418340381c8458be6b3",
++      "valid": true
++    },
++    {
++      "path": "/assets/QR-LICENSE.txt",
++      "url": "/releases/9344c61c6475cef32ae7/assets/QR-LICENSE.txt",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/plain",
++        "cache-control": null,
++        "etag": "\"51e9a131e168e6c90797df6eb1f3711f00e7a9c0b8257e3cd77a105677325827\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 1094,
++      "sha256": "51e9a131e168e6c90797df6eb1f3711f00e7a9c0b8257e3cd77a105677325827",
++      "valid": true
++    },
++    {
++      "path": "/assets/world-preview-01.png",
++      "url": "/releases/9344c61c6475cef32ae7/assets/world-preview-01.png",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "image/png",
++        "cache-control": "public, max-age=300",
++        "etag": "\"723714a7ab22d82a808730a8a19c41973949b984837784ebc955c87722dbd84e\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 27953,
++      "sha256": "723714a7ab22d82a808730a8a19c41973949b984837784ebc955c87722dbd84e",
++      "valid": true
++    },
++    {
++      "path": "/assets/world-preview-02.png",
++      "url": "/releases/9344c61c6475cef32ae7/assets/world-preview-02.png",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "image/png",
++        "cache-control": "public, max-age=300",
++        "etag": "\"a177c415539a26ba72eab802a88f1391575b6e79cf0c7b59e2f0d263b376302c\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 29205,
++      "sha256": "a177c415539a26ba72eab802a88f1391575b6e79cf0c7b59e2f0d263b376302c",
++      "valid": true
++    },
++    {
++      "path": "/assets/world-preview-03.png",
++      "url": "/releases/9344c61c6475cef32ae7/assets/world-preview-03.png",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "image/png",
++        "cache-control": "public, max-age=300",
++        "etag": "\"495e4ed278099f360ae44998dd4448e7ac490f66c3bd6994c395c7548de7ef40\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 31118,
++      "sha256": "495e4ed278099f360ae44998dd4448e7ac490f66c3bd6994c395c7548de7ef40",
++      "valid": true
++    },
++    {
++      "path": "/assets/world-preview-04.png",
++      "url": "/releases/9344c61c6475cef32ae7/assets/world-preview-04.png",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "image/png",
++        "cache-control": "public, max-age=300",
++        "etag": "\"2877d831886976f9a979a53454f8c9aee3ba8197c6c27e14dcf3e40673e65bd5\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 29656,
++      "sha256": "2877d831886976f9a979a53454f8c9aee3ba8197c6c27e14dcf3e40673e65bd5",
++      "valid": true
++    },
++    {
++      "path": "/assets/world-preview-05.png",
++      "url": "/releases/9344c61c6475cef32ae7/assets/world-preview-05.png",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "image/png",
++        "cache-control": "public, max-age=300",
++        "etag": "\"e9dd0e0fd6f0653ac2946c8f0b0214fb1a97f869eba53ce430ff8acb7e85919f\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 29165,
++      "sha256": "e9dd0e0fd6f0653ac2946c8f0b0214fb1a97f869eba53ce430ff8acb7e85919f",
++      "valid": true
++    },
++    {
++      "path": "/assets/world-preview-06.png",
++      "url": "/releases/9344c61c6475cef32ae7/assets/world-preview-06.png",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "image/png",
++        "cache-control": "public, max-age=300",
++        "etag": "\"d6d02288d04df5fca12ca0ba5e9166464a4a05e5fce29398bb264a545f412abf\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 25415,
++      "sha256": "d6d02288d04df5fca12ca0ba5e9166464a4a05e5fce29398bb264a545f412abf",
++      "valid": true
++    },
++    {
++      "path": "/assets/world-preview-07.png",
++      "url": "/releases/9344c61c6475cef32ae7/assets/world-preview-07.png",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "image/png",
++        "cache-control": "public, max-age=300",
++        "etag": "\"d25a4883493731dd6016c7f1520f9b50b70f66510740ab9c69ee3e810404e79f\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 27961,
++      "sha256": "d25a4883493731dd6016c7f1520f9b50b70f66510740ab9c69ee3e810404e79f",
++      "valid": true
++    },
++    {
++      "path": "/assets/world-preview-08.png",
++      "url": "/releases/9344c61c6475cef32ae7/assets/world-preview-08.png",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "image/png",
++        "cache-control": "public, max-age=300",
++        "etag": "\"b0e453e7b82ce715bb3bd2f9e7c90d0cc43ed6ac42b0025a8ef4a930ab5ed631\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 27056,
++      "sha256": "b0e453e7b82ce715bb3bd2f9e7c90d0cc43ed6ac42b0025a8ef4a930ab5ed631",
++      "valid": true
++    },
++    {
++      "path": "/assets/world-preview-09.png",
++      "url": "/releases/9344c61c6475cef32ae7/assets/world-preview-09.png",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "image/png",
++        "cache-control": "public, max-age=300",
++        "etag": "\"78947042e99d833e15e42247b6b831a4e5311b52dde63a0104ac605e7fe56376\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 27537,
++      "sha256": "78947042e99d833e15e42247b6b831a4e5311b52dde63a0104ac605e7fe56376",
++      "valid": true
++    },
++    {
++      "path": "/assets/world-preview-10.png",
++      "url": "/releases/9344c61c6475cef32ae7/assets/world-preview-10.png",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "image/png",
++        "cache-control": "public, max-age=300",
++        "etag": "\"cd58c03984e72c027bd1fc4c3c36ba61cec0c4cb636cf1393d6804617ef77185\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 27226,
++      "sha256": "cd58c03984e72c027bd1fc4c3c36ba61cec0c4cb636cf1393d6804617ef77185",
++      "valid": true
++    },
++    {
++      "path": "/assets/world-preview-11.png",
++      "url": "/releases/9344c61c6475cef32ae7/assets/world-preview-11.png",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "image/png",
++        "cache-control": "public, max-age=300",
++        "etag": "\"bbb6e77f793019a4f7e5f698707c8361beaf8888bb029c57ad2c6eb28486e31b\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 30170,
++      "sha256": "bbb6e77f793019a4f7e5f698707c8361beaf8888bb029c57ad2c6eb28486e31b",
++      "valid": true
++    },
++    {
++      "path": "/assets/world-preview-12.png",
++      "url": "/releases/9344c61c6475cef32ae7/assets/world-preview-12.png",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "image/png",
++        "cache-control": "public, max-age=300",
++        "etag": "\"815994fd037b1a61391281711d07f0a4c8ddba553f22cc78da346ac5a34ddbe7\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 29931,
++      "sha256": "815994fd037b1a61391281711d07f0a4c8ddba553f22cc78da346ac5a34ddbe7",
++      "valid": true
++    },
++    {
++      "path": "/assets/world-preview-13.png",
++      "url": "/releases/9344c61c6475cef32ae7/assets/world-preview-13.png",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "image/png",
++        "cache-control": "public, max-age=300",
++        "etag": "\"7e9fc9f26a68135029572b03d042fb320b09947148214862d05069dd62256289\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 27592,
++      "sha256": "7e9fc9f26a68135029572b03d042fb320b09947148214862d05069dd62256289",
++      "valid": true
++    },
++    {
++      "path": "/assets/world-preview-14.png",
++      "url": "/releases/9344c61c6475cef32ae7/assets/world-preview-14.png",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "image/png",
++        "cache-control": "public, max-age=300",
++        "etag": "\"fbeb3a2a13a67823e4da1ac795f6fe5e8974817ae4c589b3964511c54f23f33d\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 22221,
++      "sha256": "fbeb3a2a13a67823e4da1ac795f6fe5e8974817ae4c589b3964511c54f23f33d",
++      "valid": true
++    },
++    {
++      "path": "/assets/world-preview-15.png",
++      "url": "/releases/9344c61c6475cef32ae7/assets/world-preview-15.png",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "image/png",
++        "cache-control": "public, max-age=300",
++        "etag": "\"0ce471a1f499454e5a682f4416bc0a2400b7d44dfd1c1dbfdb3d2601a13285cb\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 26493,
++      "sha256": "0ce471a1f499454e5a682f4416bc0a2400b7d44dfd1c1dbfdb3d2601a13285cb",
++      "valid": true
++    },
++    {
++      "path": "/assets/world-preview-16.png",
++      "url": "/releases/9344c61c6475cef32ae7/assets/world-preview-16.png",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "image/png",
++        "cache-control": "public, max-age=300",
++        "etag": "\"a0a5b3433e17e31e8b51b158f9a70899a40c1fb98110f12daf8f92f4c1d06539\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 32667,
++      "sha256": "a0a5b3433e17e31e8b51b158f9a70899a40c1fb98110f12daf8f92f4c1d06539",
++      "valid": true
++    },
++    {
++      "path": "/audio.js",
++      "url": "/releases/9344c61c6475cef32ae7/audio.js",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/javascript",
++        "cache-control": "public, max-age=300",
++        "etag": "\"b13c8690fe232d99c64173e280030c1eaa092ccc43d19b05e2c8e6b235811d51\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 8328,
++      "sha256": "b13c8690fe232d99c64173e280030c1eaa092ccc43d19b05e2c8e6b235811d51",
++      "valid": true
++    },
++    {
++      "path": "/bootstrap.js",
++      "url": "/releases/9344c61c6475cef32ae7/bootstrap.js",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/javascript",
++        "cache-control": "public, max-age=300",
++        "etag": "\"222c6223e6c6c3a54397b17ea46b647ea2af55e5104e4a25e7195be7ea6a8d0e\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 1363,
++      "sha256": "222c6223e6c6c3a54397b17ea46b647ea2af55e5104e4a25e7195be7ea6a8d0e",
++      "valid": true
++    },
++    {
++      "path": "/brick-batch.js",
++      "url": "/releases/9344c61c6475cef32ae7/brick-batch.js",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/javascript",
++        "cache-control": "public, max-age=300",
++        "etag": "\"644f4fb555f6805e5239db67f5479b4a76f7ed94d0fa2b1f0b49068dc1318115\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 10222,
++      "sha256": "644f4fb555f6805e5239db67f5479b4a76f7ed94d0fa2b1f0b49068dc1318115",
++      "valid": true
++    },
++    {
++      "path": "/brick-events.js",
++      "url": "/releases/9344c61c6475cef32ae7/brick-events.js",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/javascript",
++        "cache-control": "public, max-age=300",
++        "etag": "\"48578bc9a381d7dd6191fee3a413e78ec5c1310337b29273da6db62abf53e3ee\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 3932,
++      "sha256": "48578bc9a381d7dd6191fee3a413e78ec5c1310337b29273da6db62abf53e3ee",
++      "valid": true
++    },
++    {
++      "path": "/brick-labels.js",
++      "url": "/releases/9344c61c6475cef32ae7/brick-labels.js",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/javascript",
++        "cache-control": "public, max-age=300",
++        "etag": "\"aea68f79fd1389fabd472d7a6ff63d42fb8fccea2dd94cf9fa683ae212bd6716\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 2654,
++      "sha256": "aea68f79fd1389fabd472d7a6ff63d42fb8fccea2dd94cf9fa683ae212bd6716",
++      "valid": true
++    },
++    {
++      "path": "/bundled-worlds.js",
++      "url": "/releases/9344c61c6475cef32ae7/bundled-worlds.js",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/javascript",
++        "cache-control": "public, max-age=300",
++        "etag": "\"3639105c83f147bab4577201ebd99aeb42beed307c06597fa1772c77ecf25bc0\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 127892,
++      "sha256": "3639105c83f147bab4577201ebd99aeb42beed307c06597fa1772c77ecf25bc0",
++      "valid": true
++    },
++    {
++      "path": "/champion.js",
++      "url": "/releases/9344c61c6475cef32ae7/champion.js",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/javascript",
++        "cache-control": "public, max-age=300",
++        "etag": "\"9e5c111b8b6dd435f85ad878744ae25e6f2edae01b8de5008dc9820670fe967d\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 5979,
++      "sha256": "9e5c111b8b6dd435f85ad878744ae25e6f2edae01b8de5008dc9820670fe967d",
++      "valid": true
++    },
++    {
++      "path": "/cinematic-score.js",
++      "url": "/releases/9344c61c6475cef32ae7/cinematic-score.js",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/javascript",
++        "cache-control": "public, max-age=300",
++        "etag": "\"83a63d80c8c483d76f1f3e7916502ede59a437a69ebedd8c16c24dada03e760b\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 1984,
++      "sha256": "83a63d80c8c483d76f1f3e7916502ede59a437a69ebedd8c16c24dada03e760b",
++      "valid": true
++    },
++    {
++      "path": "/cinematics.js",
++      "url": "/releases/9344c61c6475cef32ae7/cinematics.js",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/javascript",
++        "cache-control": "public, max-age=300",
++        "etag": "\"c0e45ddc38c3858452d01f3b772b077b8ee58e7bc577a2cf9c85bcadd3f9458c\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 15958,
++      "sha256": "c0e45ddc38c3858452d01f3b772b077b8ee58e7bc577a2cf9c85bcadd3f9458c",
++      "valid": true
++    },
++    {
++      "path": "/crystal-bricks.js",
++      "url": "/releases/9344c61c6475cef32ae7/crystal-bricks.js",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/javascript",
++        "cache-control": "public, max-age=300",
++        "etag": "\"26eb949a7bbec2d217683b64a269ba77e87b0195cd355501bf840523368140f2\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 6307,
++      "sha256": "26eb949a7bbec2d217683b64a269ba77e87b0195cd355501bf840523368140f2",
++      "valid": true
++    },
++    {
++      "path": "/daily-ending.js",
++      "url": "/releases/9344c61c6475cef32ae7/daily-ending.js",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/javascript",
++        "cache-control": "public, max-age=300",
++        "etag": "\"793eef0571f681c2450902d8e3e8338d4a97cc32e63bb6eb7bc392032ffd64b7\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 6526,
++      "sha256": "793eef0571f681c2450902d8e3e8338d4a97cc32e63bb6eb7bc392032ffd64b7",
++      "valid": true
++    },
++    {
++      "path": "/daily-score.js",
++      "url": "/releases/9344c61c6475cef32ae7/daily-score.js",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/javascript",
++        "cache-control": "public, max-age=300",
++        "etag": "\"c1265a32cfe622a49b89b6ba84517a89a8b1da15fa3665e9cc5bd0f525d10912\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 489,
++      "sha256": "c1265a32cfe622a49b89b6ba84517a89a8b1da15fa3665e9cc5bd0f525d10912",
++      "valid": true
++    },
++    {
++      "path": "/display.css",
++      "url": "/releases/9344c61c6475cef32ae7/display.css",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/css",
++        "cache-control": "public, max-age=300",
++        "etag": "\"3ad128e779c5e3787c5f5187572795ba726ae9422b1b89feb2de35e23ed188e7\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 4199,
++      "sha256": "3ad128e779c5e3787c5f5187572795ba726ae9422b1b89feb2de35e23ed188e7",
++      "valid": true
++    },
++    {
++      "path": "/display.js",
++      "url": "/releases/9344c61c6475cef32ae7/display.js",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/javascript",
++        "cache-control": "public, max-age=300",
++        "etag": "\"649adc7cadc448a10c3964a62cf0531f7bc7c4d91f98e40bd8103efc5a35768a\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 4935,
++      "sha256": "649adc7cadc448a10c3964a62cf0531f7bc7c4d91f98e40bd8103efc5a35768a",
++      "valid": true
++    },
++    {
++      "path": "/editor-drafts.js",
++      "url": "/releases/9344c61c6475cef32ae7/editor-drafts.js",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/javascript",
++        "cache-control": "public, max-age=300",
++        "etag": "\"aea7ed001d164f2e3fdd1df6831097f481544878f9a6f1036245ac5245a3bd8b\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 1023,
++      "sha256": "aea7ed001d164f2e3fdd1df6831097f481544878f9a6f1036245ac5245a3bd8b",
++      "valid": true
++    },
++    {
++      "path": "/editor.css",
++      "url": "/releases/9344c61c6475cef32ae7/editor.css",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/css",
++        "cache-control": "public, max-age=300",
++        "etag": "\"e82189843ab2b707f05db015df999abe1dbcad1e341b96b0b2b8bed618bbfb15\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 15376,
++      "sha256": "e82189843ab2b707f05db015df999abe1dbcad1e341b96b0b2b8bed618bbfb15",
++      "valid": true
++    },
++    {
++      "path": "/editor.js",
++      "url": "/releases/9344c61c6475cef32ae7/editor.js",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/javascript",
++        "cache-control": "public, max-age=300",
++        "etag": "\"50e352e36ecf93582911419fe14eca05a859463d661cd90b74e8af35fca9368a\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 41010,
++      "sha256": "50e352e36ecf93582911419fe14eca05a859463d661cd90b74e8af35fca9368a",
++      "valid": true
++    },
++    {
++      "path": "/engagement-art.js",
++      "url": "/releases/9344c61c6475cef32ae7/engagement-art.js",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/javascript",
++        "cache-control": "public, max-age=300",
++        "etag": "\"bdeb0fe0b29310204367d4a821868665aab5a240491906d26844577ccff40677\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 3268,
++      "sha256": "bdeb0fe0b29310204367d4a821868665aab5a240491906d26844577ccff40677",
++      "valid": true
++    },
++    {
++      "path": "/engagement-data.js",
++      "url": "/releases/9344c61c6475cef32ae7/engagement-data.js",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/javascript",
++        "cache-control": "public, max-age=300",
++        "etag": "\"905305da83279af4ac25a2770d2e305a29ed6e21a839d2ce5e1a3dfdebfce50d\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 5547,
++      "sha256": "905305da83279af4ac25a2770d2e305a29ed6e21a839d2ce5e1a3dfdebfce50d",
++      "valid": true
++    },
++    {
++      "path": "/engagement-ui.js",
++      "url": "/releases/9344c61c6475cef32ae7/engagement-ui.js",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/javascript",
++        "cache-control": "public, max-age=300",
++        "etag": "\"1f011e2e1e01e0839af9a2e658a3a3a19c494ad8c3877091d7108509f3750edf\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 13489,
++      "sha256": "1f011e2e1e01e0839af9a2e658a3a3a19c494ad8c3877091d7108509f3750edf",
++      "valid": true
++    },
++    {
++      "path": "/engagement.css",
++      "url": "/releases/9344c61c6475cef32ae7/engagement.css",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/css",
++        "cache-control": "public, max-age=300",
++        "etag": "\"a61525110dad9fd2b5ce5e525c4a08a468a0ec3de0fdcba6d561a955503849a6\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 17386,
++      "sha256": "a61525110dad9fd2b5ce5e525c4a08a468a0ec3de0fdcba6d561a955503849a6",
++      "valid": true
++    },
++    {
++      "path": "/engagement.js",
++      "url": "/releases/9344c61c6475cef32ae7/engagement.js",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/javascript",
++        "cache-control": "public, max-age=300",
++        "etag": "\"490c8ef601830b8acf396c81e81750c692132c3f16a1a62a050a779ec778e49d\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 5959,
++      "sha256": "490c8ef601830b8acf396c81e81750c692132c3f16a1a62a050a779ec778e49d",
++      "valid": true
++    },
++    {
++      "path": "/engine.js",
++      "url": "/releases/9344c61c6475cef32ae7/engine.js",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/javascript",
++        "cache-control": "public, max-age=300",
++        "etag": "\"65b8de38f5aa7c8525f8386229c136066eb3eab5cd7e38248325de98898863ae\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 19273,
++      "sha256": "65b8de38f5aa7c8525f8386229c136066eb3eab5cd7e38248325de98898863ae",
++      "valid": true
++    },
++    {
++      "path": "/favicon.ico",
++      "url": "/releases/9344c61c6475cef32ae7/favicon.ico",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "image/vnd.microsoft.icon",
++        "cache-control": "public, max-age=300",
++        "etag": "\"d1b9e08caed906f8f32c9e6de2fbd03e2fc2e3829bdb94778514051fce867728\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 2456,
++      "sha256": "d1b9e08caed906f8f32c9e6de2fbd03e2fc2e3829bdb94778514051fce867728",
++      "valid": true
++    },
++    {
++      "path": "/favicon.svg",
++      "url": "/releases/9344c61c6475cef32ae7/favicon.svg",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "image/svg+xml",
++        "cache-control": "public, max-age=300",
++        "etag": "\"9a4aece1f75634e9147a1e5c931c25a93a85aa6e92633146764ee2259986ce9d\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 442,
++      "sha256": "9a4aece1f75634e9147a1e5c931c25a93a85aa6e92633146764ee2259986ce9d",
++      "valid": true
++    },
++    {
++      "path": "/frame-loop.js",
++      "url": "/releases/9344c61c6475cef32ae7/frame-loop.js",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/javascript",
++        "cache-control": "public, max-age=300",
++        "etag": "\"d213d49c5f44df52f60970421494950cef3cee5a08c9b565e7aaef4ba6eeddb0\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 627,
++      "sha256": "d213d49c5f44df52f60970421494950cef3cee5a08c9b565e7aaef4ba6eeddb0",
++      "valid": true
++    },
++    {
++      "path": "/graphics-recovery.js",
++      "url": "/releases/9344c61c6475cef32ae7/graphics-recovery.js",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/javascript",
++        "cache-control": "public, max-age=300",
++        "etag": "\"9982401bd6ecdec700c393b5ae9f8f4c27bd47bdfeb0ed8d6701d78cc61491c8\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 910,
++      "sha256": "9982401bd6ecdec700c393b5ae9f8f4c27bd47bdfeb0ed8d6701d78cc61491c8",
++      "valid": true
++    },
++    {
++      "path": "/index.html",
++      "url": "/releases/9344c61c6475cef32ae7/index.html",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/html",
++        "cache-control": null,
++        "etag": "\"15319b5131fb292c7f6b5a1fddf4e6788d08372cb53ebb89d20e958067289643\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 35397,
++      "sha256": "33a46921115fc8084e0162cbf596cfc52d13b8299fedea6607e56ddf64d35a90",
++      "valid": true
++    },
++    {
++      "path": "/keyboard-input.js",
++      "url": "/releases/9344c61c6475cef32ae7/keyboard-input.js",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/javascript",
++        "cache-control": "public, max-age=300",
++        "etag": "\"72b477647855c20b046a8f4416c8cd6a47568bca3971bae4bca6c2e9066b6a2b\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 357,
++      "sha256": "72b477647855c20b046a8f4416c8cd6a47568bca3971bae4bca6c2e9066b6a2b",
++      "valid": true
++    },
++    {
++      "path": "/leaderboard.js",
++      "url": "/releases/9344c61c6475cef32ae7/leaderboard.js",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/javascript",
++        "cache-control": "public, max-age=300",
++        "etag": "\"7ab41b727c3a51868da5f8e25b32aaddc307b055185290c8351100be5c045c97\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 1490,
++      "sha256": "7ab41b727c3a51868da5f8e25b32aaddc307b055185290c8351100be5c045c97",
++      "valid": true
++    },
++    {
++      "path": "/levels.js",
++      "url": "/releases/9344c61c6475cef32ae7/levels.js",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/javascript",
++        "cache-control": "public, max-age=300",
++        "etag": "\"3e77280d1e67623623244a3d9a337d6e9b0e3510e64a642dd6d577529e388fe6\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 1660,
++      "sha256": "3e77280d1e67623623244a3d9a337d6e9b0e3510e64a642dd6d577529e388fe6",
++      "valid": true
++    },
++    {
++      "path": "/manifest.webmanifest",
++      "url": "/releases/9344c61c6475cef32ae7/manifest.webmanifest",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "application/manifest+json",
++        "cache-control": null,
++        "etag": "\"f862c18fbf110e62b45bb04aa00ec3c77fab7ba55e03452f6e311f666205197e\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 1301,
++      "sha256": "f862c18fbf110e62b45bb04aa00ec3c77fab7ba55e03452f6e311f666205197e",
++      "valid": true
++    },
++    {
++      "path": "/mastery-ceremony.js",
++      "url": "/releases/9344c61c6475cef32ae7/mastery-ceremony.js",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/javascript",
++        "cache-control": "public, max-age=300",
++        "etag": "\"9f7aeb0c59f2846f2299c5c94a9bb82b40d823d346785e179902d9134aa5e4b3\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 4218,
++      "sha256": "9f7aeb0c59f2846f2299c5c94a9bb82b40d823d346785e179902d9134aa5e4b3",
++      "valid": true
++    },
++    {
++      "path": "/mastery.js",
++      "url": "/releases/9344c61c6475cef32ae7/mastery.js",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/javascript",
++        "cache-control": "public, max-age=300",
++        "etag": "\"9f25c93ec54c6276278b69fd7a8eae74be425070655fc3ece357c71d53dd50a5\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 4880,
++      "sha256": "9f25c93ec54c6276278b69fd7a8eae74be425070655fc3ece357c71d53dd50a5",
++      "valid": true
++    },
++    {
++      "path": "/medal-ui.js",
++      "url": "/releases/9344c61c6475cef32ae7/medal-ui.js",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/javascript",
++        "cache-control": "public, max-age=300",
++        "etag": "\"6839709f5756cddc1e0f12d74ba2e673b2d5df9326f0e982aa841324ff76cbb2\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 679,
++      "sha256": "6839709f5756cddc1e0f12d74ba2e673b2d5df9326f0e982aa841324ff76cbb2",
++      "valid": true
++    },
++    {
++      "path": "/music.js",
++      "url": "/releases/9344c61c6475cef32ae7/music.js",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/javascript",
++        "cache-control": "public, max-age=300",
++        "etag": "\"fe6391fa3dac908403eabbd8e8526e54c60f2fbbe067b96aaaef286ca3199e4e\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 6483,
++      "sha256": "fe6391fa3dac908403eabbd8e8526e54c60f2fbbe067b96aaaef286ca3199e4e",
++      "valid": true
++    },
++    {
++      "path": "/offline.js",
++      "url": "/releases/9344c61c6475cef32ae7/offline.js",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/javascript",
++        "cache-control": "public, max-age=300",
++        "etag": "\"0c2fee334c9a8cf398f8d527132b196da46a9d54ce4bca69a06ba625cd7fc5be\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 11425,
++      "sha256": "0c2fee334c9a8cf398f8d527132b196da46a9d54ce4bca69a06ba625cd7fc5be",
++      "valid": true
++    },
++    {
++      "path": "/paddle-art.js",
++      "url": "/releases/9344c61c6475cef32ae7/paddle-art.js",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/javascript",
++        "cache-control": "public, max-age=300",
++        "etag": "\"1600e4740f30cac2d140c28679be2a794e8022608dd22394e8450c2eb2d5da97\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 4790,
++      "sha256": "1600e4740f30cac2d140c28679be2a794e8022608dd22394e8450c2eb2d5da97",
++      "valid": true
++    },
++    {
++      "path": "/particle-batch.js",
++      "url": "/releases/9344c61c6475cef32ae7/particle-batch.js",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/javascript",
++        "cache-control": "public, max-age=300",
++        "etag": "\"52ce4da7c6a60bb690a82d93ca738b9004e2ebe94d12ffe636cc72dc134c4678\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 3000,
++      "sha256": "52ce4da7c6a60bb690a82d93ca738b9004e2ebe94d12ffe636cc72dc134c4678",
++      "valid": true
++    },
++    {
++      "path": "/pointer-input.js",
++      "url": "/releases/9344c61c6475cef32ae7/pointer-input.js",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/javascript",
++        "cache-control": "public, max-age=300",
++        "etag": "\"330809db368402dbcd2b19d8fa57d99cf9fa69a4a36e422f891b04c2f5f28480\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 1420,
++      "sha256": "330809db368402dbcd2b19d8fa57d99cf9fa69a4a36e422f891b04c2f5f28480",
++      "valid": true
++    },
++    {
++      "path": "/postprocessing.js",
++      "url": "/releases/9344c61c6475cef32ae7/postprocessing.js",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/javascript",
++        "cache-control": "public, max-age=300",
++        "etag": "\"6bf13187afddb24a0981e83cab06b8a36d6ecaeab48da2e487457502314fa04a\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 19341,
++      "sha256": "6bf13187afddb24a0981e83cab06b8a36d6ecaeab48da2e487457502314fa04a",
++      "valid": true
++    },
++    {
++      "path": "/preferences.js",
++      "url": "/releases/9344c61c6475cef32ae7/preferences.js",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/javascript",
++        "cache-control": "public, max-age=300",
++        "etag": "\"9823421e9d0ebc865bd04ea077d12ac5294d1d85ee2a2ce79e3f4c8beca12fb2\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 1077,
++      "sha256": "9823421e9d0ebc865bd04ea077d12ac5294d1d85ee2a2ce79e3f4c8beca12fb2",
++      "valid": true
++    },
++    {
++      "path": "/publish-world.js",
++      "url": "/releases/9344c61c6475cef32ae7/publish-world.js",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/javascript",
++        "cache-control": "public, max-age=300",
++        "etag": "\"53c895ec6280913e98816fc771c9849ae326333603744f6642b691b05260072b\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 2314,
++      "sha256": "53c895ec6280913e98816fc771c9849ae326333603744f6642b691b05260072b",
++      "valid": true
++    },
++    {
++      "path": "/pwa-release.js",
++      "url": "/releases/9344c61c6475cef32ae7/pwa-release.js",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/javascript",
++        "cache-control": "public, max-age=300",
++        "etag": "\"ffeadd53781b5a5683259db148b795b756fd50169c6ef286b489e0115783b572\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 88,
++      "sha256": "ffeadd53781b5a5683259db148b795b756fd50169c6ef286b489e0115783b572",
++      "valid": true
++    },
++    {
++      "path": "/pwa.js",
++      "url": "/releases/9344c61c6475cef32ae7/pwa.js",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/javascript",
++        "cache-control": "public, max-age=300",
++        "etag": "\"c4085582173d9166353d931b3443af4061c2db90e27e6ca1941386b8fb4452fd\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 9057,
++      "sha256": "c4085582173d9166353d931b3443af4061c2db90e27e6ca1941386b8fb4452fd",
++      "valid": true
++    },
++    {
++      "path": "/render-budget.js",
++      "url": "/releases/9344c61c6475cef32ae7/render-budget.js",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/javascript",
++        "cache-control": "public, max-age=300",
++        "etag": "\"7368f9429d54c3ab90dc3db1639bf14df9bab034b4c7ed6d8d26a4d94859bcf2\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 1698,
++      "sha256": "7368f9429d54c3ab90dc3db1639bf14df9bab034b4c7ed6d8d26a4d94859bcf2",
++      "valid": true
++    },
++    {
++      "path": "/save-recovery.js",
++      "url": "/releases/9344c61c6475cef32ae7/save-recovery.js",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/javascript",
++        "cache-control": "public, max-age=300",
++        "etag": "\"387ae17446f6168fa65245309d8160407b16ece50ca4efc7d95365bae2d53f4b\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 3009,
++      "sha256": "387ae17446f6168fa65245309d8160407b16ece50ca4efc7d95365bae2d53f4b",
++      "valid": true
++    },
++    {
++      "path": "/scene-playback.js",
++      "url": "/releases/9344c61c6475cef32ae7/scene-playback.js",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/javascript",
++        "cache-control": "public, max-age=300",
++        "etag": "\"f75ef18f04547d6d1c9104e6496679fb7be22d136d9729a3f4e5db4f49fef773\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 667,
++      "sha256": "f75ef18f04547d6d1c9104e6496679fb7be22d136d9729a3f4e5db4f49fef773",
++      "valid": true
++    },
++    {
++      "path": "/scene.js",
++      "url": "/releases/9344c61c6475cef32ae7/scene.js",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/javascript",
++        "cache-control": "public, max-age=300",
++        "etag": "\"f37d44708584e59e8b1ca7f36d5808d1a88e22a1a983bdbabd8f8c20a76d1813\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 26148,
++      "sha256": "f37d44708584e59e8b1ca7f36d5808d1a88e22a1a983bdbabd8f8c20a76d1813",
++      "valid": true
++    },
++    {
++      "path": "/scenery-batch.js",
++      "url": "/releases/9344c61c6475cef32ae7/scenery-batch.js",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/javascript",
++        "cache-control": "public, max-age=300",
++        "etag": "\"5ad6495e4ea0e68b59f6e82e994b9819ade9d4ef12c8d6a5538c8decfab63aca\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 2884,
++      "sha256": "5ad6495e4ea0e68b59f6e82e994b9819ade9d4ef12c8d6a5538c8decfab63aca",
++      "valid": true
++    },
++    {
++      "path": "/score-contract.js",
++      "url": "/releases/9344c61c6475cef32ae7/score-contract.js",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/javascript",
++        "cache-control": "public, max-age=300",
++        "etag": "\"e64a07eee78201e2c1a2d0df0942a0314a3f416801a7002b10ce364502d1c63f\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 819,
++      "sha256": "e64a07eee78201e2c1a2d0df0942a0314a3f416801a7002b10ce364502d1c63f",
++      "valid": true
++    },
++    {
++      "path": "/sharing.js",
++      "url": "/releases/9344c61c6475cef32ae7/sharing.js",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/javascript",
++        "cache-control": "public, max-age=300",
++        "etag": "\"2b6bd0a4f840e23bf56a77356869ce7efe270e5b6b43f9927223f1cd7e154134\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 12202,
++      "sha256": "2b6bd0a4f840e23bf56a77356869ce7efe270e5b6b43f9927223f1cd7e154134",
++      "valid": true
++    },
++    {
++      "path": "/style.css",
++      "url": "/releases/9344c61c6475cef32ae7/style.css",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/css",
++        "cache-control": "public, max-age=300",
++        "etag": "\"784a3f55f30d72c52af6741c0db4e817e24226187215d2f29b3cbf8caa0f50ee\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 38833,
++      "sha256": "784a3f55f30d72c52af6741c0db4e817e24226187215d2f29b3cbf8caa0f50ee",
++      "valid": true
++    },
++    {
++      "path": "/vendor/qr.js",
++      "url": "/releases/9344c61c6475cef32ae7/vendor/qr.js",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/javascript",
++        "cache-control": "public, max-age=300",
++        "etag": "\"ea91d7118a5395289170da848b7c6758b996163bfbccf312591ab65a4911b7c0\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 51907,
++      "sha256": "ea91d7118a5395289170da848b7c6758b996163bfbccf312591ab65a4911b7c0",
++      "valid": true
++    },
++    {
++      "path": "/vendor/THREE-LICENSE.txt",
++      "url": "/releases/9344c61c6475cef32ae7/vendor/THREE-LICENSE.txt",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/plain",
++        "cache-control": null,
++        "etag": "\"bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 1081,
++      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
++      "valid": true
++    },
++    {
++      "path": "/vendor/three.core.min.js",
++      "url": "/releases/9344c61c6475cef32ae7/vendor/three.core.min.js",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/javascript",
++        "cache-control": "public, max-age=300",
++        "etag": "\"61ba0df005b05991361d040d8ff670e1aadfd0ce7aeebd1fdb0725957a8957de\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 381124,
++      "sha256": "61ba0df005b05991361d040d8ff670e1aadfd0ce7aeebd1fdb0725957a8957de",
++      "valid": true
++    },
++    {
++      "path": "/vendor/three.module.min.js",
++      "url": "/releases/9344c61c6475cef32ae7/vendor/three.module.min.js",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/javascript",
++        "cache-control": "public, max-age=300",
++        "etag": "\"e2b5ee6bccd38fd6d8a2428546b83c5f2426d84b152ef82be8055556e3b40eb6\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 338908,
++      "sha256": "e2b5ee6bccd38fd6d8a2428546b83c5f2426d84b152ef82be8055556e3b40eb6",
++      "valid": true
++    },
++    {
++      "path": "/victory-music.js",
++      "url": "/releases/9344c61c6475cef32ae7/victory-music.js",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/javascript",
++        "cache-control": "public, max-age=300",
++        "etag": "\"8ab4f00f99b49e1774e41314914719c5f02a0d96e1754503ae63a55881b41b7e\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 1486,
++      "sha256": "8ab4f00f99b49e1774e41314914719c5f02a0d96e1754503ae63a55881b41b7e",
++      "valid": true
++    },
++    {
++      "path": "/world-data.css",
++      "url": "/releases/9344c61c6475cef32ae7/world-data.css",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/css",
++        "cache-control": "public, max-age=300",
++        "etag": "\"3f36980557563c89e1a700d275bea9eca1cce1305f32b2e6dbc51d600d33fe9d\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 889,
++      "sha256": "3f36980557563c89e1a700d275bea9eca1cce1305f32b2e6dbc51d600d33fe9d",
++      "valid": true
++    },
++    {
++      "path": "/world-format.js",
++      "url": "/releases/9344c61c6475cef32ae7/world-format.js",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/javascript",
++        "cache-control": "public, max-age=300",
++        "etag": "\"977c3aa76d4821191acb3a30a04385e1bcf51191aeb24bac898fea17afaa4cb9\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 2768,
++      "sha256": "977c3aa76d4821191acb3a30a04385e1bcf51191aeb24bac898fea17afaa4cb9",
++      "valid": true
++    },
++    {
++      "path": "/world-identity.js",
++      "url": "/releases/9344c61c6475cef32ae7/world-identity.js",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/javascript",
++        "cache-control": "public, max-age=300",
++        "etag": "\"abcb9f3099b738030db2b3f94e82a0067259fdac6a6deba06c0fb743963517c9\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 953,
++      "sha256": "abcb9f3099b738030db2b3f94e82a0067259fdac6a6deba06c0fb743963517c9",
++      "valid": true
++    },
++    {
++      "path": "/world-schema.js",
++      "url": "/releases/9344c61c6475cef32ae7/world-schema.js",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/javascript",
++        "cache-control": "public, max-age=300",
++        "etag": "\"25cf56a883f29bb6c83eb917c3f8405da967c9fb68af4d9053618031808e0ca7\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 12345,
++      "sha256": "25cf56a883f29bb6c83eb917c3f8405da967c9fb68af4d9053618031808e0ca7",
++      "valid": true
++    },
++    {
++      "path": "/world-working-document.js",
++      "url": "/releases/9344c61c6475cef32ae7/world-working-document.js",
++      "status": 200,
++      "redirected": false,
++      "headers": {
++        "content-type": "text/javascript",
++        "cache-control": "public, max-age=300",
++        "etag": "\"04b9fa06d6ddc8e227e309314af8ad6fbcc8538d9b3e8b8897ffe7c623825542\"",
++        "service-worker-allowed": null,
++        "content-security-policy": null,
++        "x-content-type-options": null
++      },
++      "bytes": 2867,
++      "sha256": "04b9fa06d6ddc8e227e309314af8ad6fbcc8538d9b3e8b8897ffe7c623825542",
++      "valid": true
++    }
++  ],
++  "passed": true
++}
+diff --git a/audit/2026-11-01-fullscreen-live.png b/audit/2026-11-01-fullscreen-live.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..99165f62b43d38086ece3bf5aa4bccff6a59db51
+GIT binary patch
+literal 2911
+zcmd^Bc~IJS76%ngOxgw^n0nM!8?RI?f>((;ZBd&n;J8HbOzH(fq81OlwawI3vFh3!
+zDjIFHLGv?WtSD8qwvAU+G)NEwhzUtNf=W!{eXzDWI<qsGo!P(lec#M`-}m{>d!P5_
+z{qfaIY94`(o%KHB4FZEfAn@J+X=I?!LAp8+U5JjZE<{&PPxp}iF@62RhxOrazjO4M
+zA^gM%LpTCqWO~xf$k@UJfq4I;_bn`~Y;0}bHM9HJ&idn%);89ECIRc|>FFQRhw1CX
+ztc?&x*8j6;eg#1ffkfaGZLm2=3kueTf;GJ$lRs%f{-k>#I$GL$M8SvlQ0%ciR9j11
+zM;CHP@9<wQz<W0c)Zhc8F6>i3J-E43(ocU6r<dM5ZsC~l&DGz=5r!Y4E`KjP^cm4V
+zD)CC~?|WH{_R?#E|D(oVS#<X>E9hPYEgguC_CbBH7F1gY_9?^w>F9U-1LDnax=<qp
+z9n}W!vDSuyJV6_ixR#W+t76!@cEe>qv&o%tUu|I$imyBwsa-O4iNh)7m5Ff?EE>P7
+zFXwNm`CF`ylQke8sV;&P#T}{YwmRG6r81<d<LO>fjyJY{m)M3JcY7K70OM949rQ;l
+zrFC*b)plI=T>;P->O{o#`s&1^P)@!5+x2`P!Xhp+y>b$X#XgBvLnj=m`P0vfA-`;n
+zrDU6nM{U`bazTawx$=5?X{(BOl|y57Z0>464XvJ1MSt`v#h`E_C~z&c8DFjMTH8=Q
+zUDZ24Ao6PRilsj>7+#eVF-wa=d?Iw94QBEr$8=VJC($Veeeg&z0q>*^dkBziOYCkW
+zdHErLcpG#GJ%#i;@4}oUok>}!$Yb?&UV6UKKDT4!Ai-soo@+g^_M-Ws5jH#!cpyrb
+zhblPsHVU_v;I$qnv;2-%XJz$K#|*wc82cL>lF1KK*B09IN~QQj!?X9gBPIw~f%Eeo
+zCodEdhRHyp9zT^?2tD}du<{`huNJt?B=bvA_h^N!6GgXIFBbcMHM-p%K+BJG;n#dV
+zp)Q*f1@;Y&wx0Kf%X@iFVwgfWfFYfR(?g1F*>)0-(9RaqriJR9XihK>nCdT-qzP$L
+ziB5Q9Y+t6*nVlkanZ@|pb(CFxDN%G~91eJS<7RJmh-h}Vc3N=cpsl4mb(5zuc6)d~
+za)wW{eEq}M*Zy0p;MPsI?kkb)MzN`ecNb;^nTS)vY@lgbywDr#>%P%>-QAr(IM}k`
+z>7X?ONs7u&5c69~hOGMm=2~&039@}_%%%)B{uAdB?L<ep5SC-~%w<mDQfy1MbSY^!
+zcGin;ThPCg-kpREW-p?J=nRx1OiimOc~?2Vf&v^qikqwO9G8c*tG%-ea^o?!HcWnF
+zi^>J4yxIrD)19yh&DBDa&AX;`!VJ80q^e;eex55A#Rd*`q(?MV1~dm(mf~Vz-RM3T
+zCKWe26}(dOMf#%irI0_^{n5_$DeV+nNt(Z*D*&7-sLtq>ob&mILceJfD~WwrJDpN=
+zPJs5y?!4oJz{CCg;lzZ@2pb^s`c$Tndih1@>%>L^oUD|$l;!?bnh^hxIm0p+0C8hx
+ztqUW4Ay|T38Gh?t%7dK`Rh!?+zGL2ITJzE+5cCLE#1K0JOkQ=i0NK8KT6&#~@2cYS
+zR0B)=AvWiTA6!V-g&HU1)>4uwFG_1=tmH7qj`;w*aZZKt`L&t4WkV0@8R1N1$gg#2
+zEb1RTC~R|3y1%;NZKe(He{}Z^D|-++`AAV{n96=8qoZ;0G)6UDv_M#qS^|`bSM@Qg
+zWU`y@^s0-)YIbkG;B^6cg6v*ZNH1bE)Gk8L#d8y-7raJwkE4*ET%c?aWO%6Ac0!ul
+zsMWid!aPE@E;L^6A_U*rK%io`P^ut)?{aFw4fg46w*Tfz2Vj}dN{*mVD@x2{s~)`V
+zn!GOmjZ>{Vay9qGz=8%u|L5;Q?r^&eXX)ClW#8>nXtD1!`d)GBB2x0sB0lED`sR14
+z%#h7d3gXpRnd>Z%X&JqhEF@)JDGTca6gG;Jt2IyUtaeG?Y;~K>6;{^HI|cR7nvCD3
+zE&<hU19f@zgd6_Fp13i}!>0GljHsEO<0c+&t!Kp*@l-qm`);+sM`@oqUYQH^r6HB&
+zQVZwud=1C|u@7uoCkv&QwT2Jo_y$MYeNrKuWsrjFh~qQUcZhL-bB7Nc=X;)Tg~Wbu
+ziWuq_P(wad?T33z>e{u(#IHLp1F^i*ldQ;?azS;N2j}~lzM(Il_zMbfxVtQB#aa?`
+z2gQ&wU6;ZmML4XuJ1`j=Yf1rJR#ejFy82zU=g58A2lE`3@|jy=pK+{PE0R}|cYS%w
+zk30hxVZtS_#~v*vJ-X*_Tw8x^l$4rOqLQ>-@bTSI<W%6*1b2W><0qbg9v7k2Ctf|-
+zwQ}w`Zx=wWbZwJ${IVQIQa1IF?-$;~tY^KbAq;JQRrE=wV|px+6tisGST!03^PKUL
+zbZ<0ldyTP(=;sUx_j%o|AjGT&6y=^V%_`{)-MA%rYi{vVaP-%27}kCW%$P2j93xo5
+zg?$9es0_^5YGWc)R7H?)-VLBC0gEzMS=GXj{Qk=r4t00<+<<V1=V82Y^ZGn0H&@{o
+zheSnmv&mMr3egtB?^<qwGe=ZZa>Z-CoSFKv$sd=d=6df$E_>H`4+7?qVn%hysK43B
+z014`qOhorDV+f+34HxCDp~8en=4qf{JKXzKS7I4o^g0KYo?W86iV8He6E{+?dU;mW
+zTPj|y#0^|jY(L00pB2~ylX|!s(AH|t<%8|H<5btC1NnZxwKv(r2y<pVZOQ9r*&R{m
+z>);mNX@1W7?9Q<#KW3GLAGHD)?p>b2Jp6X^h=0%Vq>x!(`>@EdsFAHtoVq;=-*McL
+z4>GfuO^diOd;5$eRqGKgNGNe7>;9^3P2*CoL%8)>kpr=$L3y5IN#&(8XDm2EOcPCV
+zdr*vW@PonS-C=Z?gbGCC&FXzrpNTaf^-?ysjxm`9fP%h!6W{$<81Ec$f<@b+L=~o?
+zi6+bR#`(<<4e0P^icG=ms9&^YK7IvoC0iL9S0&F5FI(AGJd&B2JuK?VYUZTfjQ2>`
+z)4-?S@;Bg9^|VWYZDUz;(>eXoabkMhGbbF8bX3h9vk6pWKHXDqR<ul*;ZSVDF1B5J
+zT>qoRh27m*)fw6^N4O+pAAH33=oqQ&qS{^(N`&_jQQTBxZaz2Yi+}&a_6h%=Sg_{d
+FzW{awvzh<^
+
+literal 0
+HcmV?d00001
+
+diff --git a/audit/2026-11-01-fullscreen-release-gate.json b/audit/2026-11-01-fullscreen-release-gate.json
+new file mode 100644
+index 0000000..3c180c7
+--- /dev/null
++++ b/audit/2026-11-01-fullscreen-release-gate.json
+@@ -0,0 +1,45 @@
++{
++  "schema": 1,
++  "passed": true,
++  "completedAt": "2026-11-01T18:19:35.279Z",
++  "identity": {
++    "commit": "0e206a016ad1dc07e169a95eca7b44da1c422415",
++    "digest": "077d86509ae065b21d8b85e9deba8d47f7b88517c761e9ca812669f236a6aa82",
++    "files": 247,
++    "dirty": false
++  },
++  "release": "9344c61c6475cef32ae7",
++  "checks": {
++    "suite": true,
++    "pwa": true,
++    "repository": true,
++    "requirements": true
++  },
++  "repository": {
++    "documents": 39,
++    "localLinks": 310,
++    "scannedFiles": 599,
++    "secretScan": "limited high-confidence credential patterns"
++  },
++  "requirements": {
++    "requirements": 9,
++    "browser": [
++      "storage",
++      "editor",
++      "layout",
++      "performance",
++      "rewards",
++      "playback"
++    ],
++    "runtimeDigest": "c58319f174a0e9595cd5c0e3339ac521a9b118a356bb5e472f01105c7f9ffcfa",
++    "receiptSha256": "f729e4e1fe6f9aba4bd6e697cde2cf979f508affa07ae61d9f8ae854f18feab3",
++    "limits": [
++      "Local Chromium iframe sizes are CSS viewport fixtures, not physical phone/OS or trusted touch evidence.",
++      "Synthetic form/click dispatch checks application paths, not native fullscreen/share activation.",
++      "Accessibility observations are scoped; no blanket WCAG or nonvisual gameplay claim."
++    ]
++  },
++  "limits": [
++    "Automated local evidence only; physical devices, independent review and platform contracts require separate acceptance records."
++  ]
++}
+diff --git a/audit/2026-11-01-fullscreen-release.md b/audit/2026-11-01-fullscreen-release.md
+index f245806..cfcbad4 100644
+--- a/audit/2026-11-01-fullscreen-release.md
++++ b/audit/2026-11-01-fullscreen-release.md
+@@ -15,3 +15,13 @@ Actions: Regenerated the ignored QA fixture; refreshed the required version-cont
+ Scope: Local browser/fixture evidence, not physical Android installed-window validation. The prior fullscreen inspection receipts are included, including the preserved byte-array parsing failure and corrected readback.
+ Next: Commit exact release inputs, run release gate and required remote CI, merge and deploy.
+ UTC: 2026-11-01T18:17:10.5627306Z
++
++## FBR-PUBLISHED
++Actor: Codex
++Plan reference: FBR-PLAN
++Source: b72eada76df7bc7508a9f39239e75d3a0f7f7e7c, integrated normally via PR #25 as 0e206a016ad1dc07e169a95eca7b44da1c422415 after both required Bun/CI checks passed. Local exact-merged-source gate passed all 237 tests, repository, generated package and browser requirements.
++Deployment: Runtime 9344c61c6475cef32ae7 published at 2026-11-01T18:20:26.879Z through the pinned owner-DAV publisher. All 103 publication paths completed; 94 public cached assets, entry graph, worker and fullscreen manifest verified. Score records/policies, authored world documents and catalogs preserved. Publisher session quit after completion.
++Client verification: Existing client moved from f6395c37345e39f49387 to 9344c61c6475cef32ae7 using Settings Update game; Ready to play offline returned, displayed personal best 5,300 and Prism Garden 0-point checkpoint preserved. A Settings tap at 390x844 changed the API-driven fullscreen label to Exit fullscreen while opening Settings; close retained fullscreen. No score submitted. Receipt and screenshot included. This is local Chromium evidence, not a physical Android guarantee.
++Test-tool correction: Unscoped Update game matched three controls; selected the observed settings-update control, which completed the update. No application change was needed. Native Edge acceptance window was task-created; cleanup requested its closure. The local preview and browser viewport override are cleaned up after verification.
++Files: Dated deployment, merged release gate, public live, client update and screenshot receipts; this appended log; publication hashes/patch. Audit-only follow-up does not alter the deployed runtime and requires no second deployment.
++UTC: 2026-11-01T18:22:06.4442211Z
