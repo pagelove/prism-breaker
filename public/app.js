@@ -1,3 +1,4 @@
+import{mountCollectionFinder}from'./collection-finder.mjs';
 import {EngagementUI,SYNERGIES} from './engagement-ui.js';
 import {medalToken} from './medal-ui.js';
 import {ENGAGEMENT} from './engagement-data.js';
@@ -464,3 +465,5 @@ function frame(now){const dt=Math.min(.05,Math.max(0,(now-last)/1000));last=now;
  const listening=collectionMusic!==null&&$('#mastery-dialog').open&&!document.hidden;sound.update(listening||musicActive&&!(['cut','champion','award'].includes(view)&&scenePaused),listening?collectionMusic:THEMES.indexOf(game.world.music),view==='cut'||view==='champion'||view==='award'||view==='game'&&game.engagement.recovery,listening?null:victory);if(!document.hidden)sceneDelta+=dt;else sceneDelta=0;const renderFPS=view==='home'||dialogs.length||game.state==='paused'?30:60;if(document.hidden)renderClock.reset();else if(renderClock.due(now,renderFPS)){stage.render(game,sceneDelta,now/1000,view,cutTime);stage.observeFrame(renderClock.elapsed,view==='game'&&game.state==='playing'&&!dialogs.length);sceneDelta=0;}
  }if(toastUntil&&now>toastUntil){$('#toast').classList.remove('visible');toastUntil=0;}}
 const appLoop=startFrameLoop(frame,{onError(error){keys.clear();paddleInput?.cancel();accumulator=0;sound.update(false,THEMES.indexOf(game.world.music));if(view==='game'&&['playing','ready'].includes(game.state))openDialog('#pause-dialog');persist();$('#unpause').disabled=true;$('#error').hidden=false;$('#error-text').textContent='The arena stopped unexpectedly. Reload the game to try again. Your Adventure checkpoint has been kept if saving is available; an unfinished Daily Challenge or Practice run will end.';console.error('Game frame failed:',error);}});
+
+mountCollectionFinder({root:'#world-grid',card:'.world-card',label:'Find a world',status:card=>({completed:!card.querySelector('.world-completed')?.hidden,available:!card.disabled})});

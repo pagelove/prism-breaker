@@ -422,3 +422,5 @@ Local diagnostic tools include a bounded checkpoint/input trace with compatibili
 ## Document-first development review
 
 Read [the edition2.4 project record](DOCUMENT-FIRST-REVIEW.md) for source authority, operation/recovery contracts, justified runtime exceptions and current acceptance limits. Plans and verification are recorded in audit/CHANGELOG.md. Local tests do not establish live privacy, authorization or physical-device acceptance.
+
+The collection finder searches actual names/descriptions and filters completed or unplayed content; Racing also filters available circuits without unlocking locked events. Clear filters restores the collection. View state never changes game records.
