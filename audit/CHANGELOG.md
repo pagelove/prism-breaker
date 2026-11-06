@@ -21,3 +21,9 @@ Current and Completed badges are visually exclusive. Preserve actual completion 
 Actual final-runtime browser harness passed storage, playback, engagement, rewards, editor, layout and performance. Receipt records exact runtime digest 75764086cd35920a1f99e56ca8a49ae6fcd74342713401063e4b5b5fd7f7d410. Completed-current-world filter uses actual progress flag. Full 239 tests and rebuilt PWA passed; committed release gate next. Public review transport is separately namespaced and does not establish native permissions.
 
 Release attempt correction: generated PWA file is pwa-release.js, not .json; first scoped add failed without staging changes and gate correctly rejected uncommitted source. Corrected explicit file list before retry.
+
+## PRODUCT-READINESS-CROSS-PLATFORM-PLAN — 2026-11-06T14:29:48.092Z — Codex
+Required GitHub CI exposed physical CRLF runtime inputs although Git normalizes tracked text to LF. Normalize working text to repository LF contract before generating PWA integrity hashes. This preserves logical source; regenerate package and collect fresh exact-runtime browser acceptance rather than reusing earlier receipt. 2 working text files normalized. Verification pending.
+
+## PRODUCT-READINESS-CROSS-PLATFORM-VERIFIED — 2026-11-06T14:37:00.2390414Z — Codex
+Normalized LF build matches Linux CI release 6f5e9ab760f73887f45d. Fresh browser storage/playback/engagement/rewards/editor/layout/performance cases all passed, runtime digest e0ed665b188d42cd1d6460317624731fbe09d182262531ecfce1d32096e78f20. This supersedes only the final release identity; earlier true receipts retained centrally.
