@@ -61,7 +61,7 @@ function toast(message){$('#toast').textContent=message;$('#toast').classList.ad
 function updateWorldCards(){
  const checkpoint=storage.get('save'),activeWorld=view==='home'?Math.min(LAST_WORLD,(checkpoint?.game.level??0)+(checkpoint?.pendingNext?1:0)):game.level;
  $('#world-editor-link').href='/editor/'+worldSlug(activeWorld);
- all('.world-card').forEach(card=>{const index=Number(card.dataset.world),current=index===activeWorld,completed=index<highest;card.classList.toggle('current',current);card.querySelector('.world-current').hidden=!current;card.querySelector('.world-completed').hidden=!completed||current;if(current)card.setAttribute('aria-current','step');else card.removeAttribute('aria-current');});
+ all('.world-card').forEach(card=>{const index=Number(card.dataset.world),current=index===activeWorld,completed=index<highest;card.dataset.completed=String(completed);card.classList.toggle('current',current);card.querySelector('.world-current').hidden=!current;card.querySelector('.world-completed').hidden=!completed||current;if(current)card.setAttribute('aria-current','step');else card.removeAttribute('aria-current');});
  $('#journey-summary').textContent=highest?'Adventure: '+highest+' of '+WORLD_COUNT+' worlds completed.':'Your adventure starts in Prism Garden. Completed worlds will be marked here.';
 }
 function updateWorld(){
@@ -466,4 +466,4 @@ function frame(now){const dt=Math.min(.05,Math.max(0,(now-last)/1000));last=now;
  }if(toastUntil&&now>toastUntil){$('#toast').classList.remove('visible');toastUntil=0;}}
 const appLoop=startFrameLoop(frame,{onError(error){keys.clear();paddleInput?.cancel();accumulator=0;sound.update(false,THEMES.indexOf(game.world.music));if(view==='game'&&['playing','ready'].includes(game.state))openDialog('#pause-dialog');persist();$('#unpause').disabled=true;$('#error').hidden=false;$('#error-text').textContent='The arena stopped unexpectedly. Reload the game to try again. Your Adventure checkpoint has been kept if saving is available; an unfinished Daily Challenge or Practice run will end.';console.error('Game frame failed:',error);}});
 
-mountCollectionFinder({root:'#world-grid',card:'.world-card',label:'Find a world',status:card=>({completed:!card.querySelector('.world-completed')?.hidden,available:!card.disabled})});
+mountCollectionFinder({root:'#world-grid',card:'.world-card',label:'Find a world',status:card=>({completed:card.dataset.completed==='true',available:!card.disabled})});

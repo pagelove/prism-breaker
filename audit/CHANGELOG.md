@@ -13,3 +13,11 @@ Implemented the scoped prism batch from central FINDINGS.md: app-specific task v
 
 ## PRODUCT-READINESS-VERIFIED — 2026-11-06T13:56:43.726Z — Codex
 User request fulfilled within scoped product task pass; see central product-readiness FINDINGS.md. Verification: affected source checks and behavioral suites passed, including all9template period/order/export helpers, CRM/invoice state tests, and garden/circuit/world finder filters; desktop/narrow-screen browser task checks and real CSV download recorded. Source records/write/trust boundaries retained; browser fixtures do not establish hosted privacy/validation or native writes. Affected files are the complete reviewed diff and SHA256 inventory, linked by this commit. Public review deployment and final acceptance tracked centrally; ATS remains local-only as previously directed.
+
+## PRODUCT-READINESS-COMPLETION-PLAN — 2026-11-06T14:12:35.899Z — Codex
+Current and Completed badges are visually exclusive. Preserve actual completion in a derived DOM data attribute and use it for collection filtering so a completed current world remains in Completed results. Only app.js presentation and finder status binding change; no scoring/progress model changes. New exact-runtime browser acceptance is required after this correction.
+
+## PRODUCT-READINESS-COMPLETION-VERIFIED — 2026-11-06T14:28:00Z — Codex
+Actual final-runtime browser harness passed storage, playback, engagement, rewards, editor, layout and performance. Receipt records exact runtime digest 75764086cd35920a1f99e56ca8a49ae6fcd74342713401063e4b5b5fd7f7d410. Completed-current-world filter uses actual progress flag. Full 239 tests and rebuilt PWA passed; committed release gate next. Public review transport is separately namespaced and does not establish native permissions.
+
+Release attempt correction: generated PWA file is pwa-release.js, not .json; first scoped add failed without staging changes and gate correctly rejected uncommitted source. Corrected explicit file list before retry.
