@@ -418,3 +418,7 @@ The tracked Web Game Development Handbook now matches the identified authoring e
 [Release requirements](review/requirements.html) independently enumerate required exports, behavioral contracts and exact-runtime browser evidence. The release gate rejects missing, failed or stale required receipts. Browser fixtures cover save failure followed by ordinary actions, DOM editing/preview isolation, layout/text enlargement and controlled/sustained rendering. Evidence is scoped to its recorded engine and conditions. See [public data and recovery operations](PUBLIC-DATA-OPERATIONS.md) and the [implementation audit](audit/2026-10-17-handbook-implementation.md).
 
 Local diagnostic tools include a bounded checkpoint/input trace with compatibility checks and first-divergence replay; traces do not establish score authenticity or upload themselves. The original physical-device/human procedures remain separate and uncompleted where no evidence exists.
+
+## Document-first development review
+
+Read [the edition2.4 project record](DOCUMENT-FIRST-REVIEW.md) for source authority, operation/recovery contracts, justified runtime exceptions and current acceptance limits. Plans and verification are recorded in audit/CHANGELOG.md. Local tests do not establish live privacy, authorization or physical-device acceptance.
