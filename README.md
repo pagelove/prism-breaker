@@ -4,7 +4,7 @@
 
 A colorful brick-breaker game built with Three.js on [Pagelove](https://pagelove.com). Explore sixteen 3D worlds, catch glowing power-ups, watch cinematic transitions, and chase shared high scores.
 
-**[Play the game](https://sane-guild-8399.onpagelove.com/)** · **[Public source](https://github.com/wesley83/prism-breaker)**
+**[Play the game](https://sane-guild-8399.onpagelove.com/)** · **[Public source](https://github.com/pagelove/prism-breaker)**
 
 The browser runs the gameplay and creates the music and scorecards. Native Pagelove routes and composed templates power the world editor; editable worlds are stored as HTML microdata. Pagelove hosts the complete site and stores and validates shared scores through HTML resources. No separate application server, external runtime API, or CDN is required.
 
@@ -220,7 +220,7 @@ See [SCORING.md](SCORING.md) for streak examples, power-up durations, timing rul
 Use Bun 1.4.3 or newer (1.4.3 was verified for this tooling):
 
 ```sh
-git clone https://github.com/wesley83/prism-breaker.git
+git clone https://github.com/pagelove/prism-breaker.git
 cd prism-breaker
 bun tools/serve.mjs
 ```
@@ -332,7 +332,7 @@ bun tools/build-pwa.mjs --check
 
 Commit the exact source, then run `bun run release:check` before publishing. This runs the behavioral suite, PWA consistency, maintained document links, local module imports and a limited credential-pattern check. Its ignored evidence names the source commit, content digest and runtime release and lasts 24 hours. The publisher rejects missing/stale evidence and dirty release inputs; it checks again before uploading the worker. Recheck after source/documentation edits or a new commit. This gate does not certify physical devices or unresolved platform contracts.
 
-Run publishing checks from the actual Git checkout of `wesley83/prism-breaker`. A separate authoring mirror or a folder inside an unrelated parent repository cannot issue release approval. It can still build, run tests and preview the game.
+Run publishing checks from the actual Git checkout of `pagelove/prism-breaker`. A separate authoring mirror or a folder inside an unrelated parent repository cannot issue release approval. It can still build, run tests and preview the game.
 
 The pinned [Quality workflow](.github/workflows/quality.yml) installs frozen Bun dependencies, regenerates artifacts, rejects generated drift and runs the gate on pushes and pull requests. See [review results](FOLLOW-UP-REVIEW-RESULTS.md) for actual hosted-check/branch-protection status. Run repository checks separately with `bun run check:repository`.
 

@@ -243,7 +243,7 @@ Readable documents still need enforceable rules.
 
 Define which actors may perform which operations on which resources. Define permitted document structures, required properties, valid values and protected fields.
 
-Use the relevant Pagelove authorization, schema, shape and request-processing mechanisms where supported. Prism Breaker provides a concrete implementation of these capabilities for shared records and owner-managed documents. [Implemented Pagelove capability mapping](https://github.com/wesley83/prism-breaker#pagelove-features-used)
+Use the relevant Pagelove authorization, schema, shape and request-processing mechanisms where supported. Prism Breaker provides a concrete implementation of these capabilities for shared records and owner-managed documents. [Implemented Pagelove capability mapping](https://github.com/pagelove/prism-breaker#pagelove-features-used)
 
 Client validation should provide immediate, helpful feedback. Server-side enforcement must remain authoritative for shared data.
 

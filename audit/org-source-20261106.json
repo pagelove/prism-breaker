@@ -1,0 +1,21 @@
+{
+  "utc": "2026-11-06T18:30:00.415Z",
+  "actor": "Codex",
+  "userRequest": "Use pagelove/prism-breaker and create a new public ATS repository; update links.",
+  "destination": "pagelove/prism-breaker",
+  "previousOrigin": "https://github.com/wesley83/prism-breaker.git",
+  "preservedParent": "6560bec2a7a3c2df0cc8f85cd9a4f4b26644a204",
+  "trackedFiles": 696,
+  "files": [
+    {
+      "file": "README.md",
+      "sha256": "1a35b5691e53ff0c0fccfd53f6ce6689a6035d3c2434a983c571c615eebc909d"
+    },
+    {
+      "file": "DOCUMENT-FIRST-DEVELOPMENT.md",
+      "sha256": "7b7f18411aaad2ad5eaec91579a2b8e464ccb66ef9890537adeb3e6b978705c5"
+    }
+  ],
+  "verification": "Repository/requirements checks pass; runtime unchanged. New organization CI/release check follows committed identity.",
+  "scope": "Tracked main history and reviewed source only. Original repository retained; no application-data or runtime deployment change."
+}
